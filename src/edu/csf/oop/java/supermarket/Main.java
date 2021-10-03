@@ -1,3 +1,5 @@
+package edu.csf.oop.java.supermarket;
+
 import java.util.Random;
 
 public class Main {
