@@ -33,7 +33,6 @@ public class Main {
                     }
                     System.out.printf("Финальная вместительность магазина - %d\n", Globals.capacity);
                     System.out.println("Конец игры");
-                    scanner.nextInt();
                     return;
                 }
                 list.decreaseDaysBeforeExpiration();
