@@ -3,24 +3,17 @@ package edu.csf.oop.java.supermarket;
 import java.util.List;
 import java.util.Random;
 
+import static edu.csf.oop.java.supermarket.Main.*;
+
 public class Utils {
-    public static void waitTime(ListOfGoods list, int number) {
-        int cycles = (22 - Globals.hours) * 6 + (60 - Globals.minutes) / 10;
-        if (number == 0 || number > cycles) {
-            number = cycles;
-        }
-        for (int i = 0; i < number; i++) {
-            int[] sellsAndMoney = list.sell();
-            Globals.money += sellsAndMoney[sellsAndMoney.length - 1];
-            for (int j = 0; j < sellsAndMoney.length - 1; j++) {
-                Globals.sells[j] += sellsAndMoney[j];
-                Globals.quantityInShoppingRoom -= sellsAndMoney[j];
-            }
-            Globals.minutes += 10;
-            if (Globals.minutes == 60) {
-                Globals.hours++;
-                Globals.minutes = 0;
-            }
+
+    public static void sell() {
+        int[] sellsAndMoney = list.sell();
+        supermarketState.setMoney(supermarketState.getMoney() + sellsAndMoney[sellsAndMoney.length - 1]);
+        int[] sells = statistics.getSells();
+        for (int j = 0; j < sellsAndMoney.length - 1; j++) {
+            statistics.setSells(j, sells[j] + sellsAndMoney[j]);
+            supermarketState.setQuantityInShoppingRoom(supermarketState.getQuantityInShoppingRoom() - sellsAndMoney[j]);
         }
     }
 
@@ -71,14 +64,16 @@ public class Utils {
                 "Продано");
         Products[] types = Products.values();
         String[] ruTypes = Products.productsToRussian();
+        int[] prices = statistics.getPrices();
+        int[] sells = statistics.getSells();
         for (int i = 0; i < types.length; i++) {
             System.out.printf("|%8s|%15d|%16d|%20d|%26d|%7d|\n",
                     ruTypes[i],
-                    Globals.prices[i],
+                    prices[i],
                     list.getAllWarehouseQuantity(types[i]) + list.getAllShoppingRoomQuantity(types[i]),
                     list.getAllWarehouseQuantity(types[i]),
                     list.getAllShoppingRoomQuantity(types[i]),
-                    Globals.sells[i]);
+                    sells[i]);
         }
     }
 

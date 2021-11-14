@@ -5,51 +5,48 @@ import java.util.Scanner;
 
 public class Main {
 
+    public static Time time;
+    public static SupermarketState supermarketState;
+    public static ListOfGoods list;
+    public static Statistics statistics;
+
     public static void main(String[] args) {
         Locale.setDefault(Locale.ROOT);
-        ListOfGoods list = new ListOfGoods();
         Scanner scanner = new Scanner(System.in);
         int i, j;
+        time = new Time();
+        supermarketState = new SupermarketState();
+        list = new ListOfGoods();
+        statistics = new Statistics();
 
-        Globals.hours = 8;
-        Globals.minutes = 0;
-        Globals.days = 1;
-        Globals.money = 10000;
-        Globals.prices = new int[]{10, 20, 30, 40};
-        Globals.sells = new int[Products.values().length];
-        Globals.capacity = 20;
-        Globals.quantityInShoppingRoom = 0;
-
-        System.out.printf("День %d\n", Globals.days);
+        System.out.printf("День %d\n", time.getDays());
 
         while (true) {
-            if (Globals.hours == 23) {
-                if (list.isEmpty() && Globals.money < 0) {
+            if (time.isEndOfDay()) {
+                if (list.isEmpty() && supermarketState.getMoney() < 0) {
                     System.out.println("У вас отрицательный баланс и отсутствуют товары! Вы - банкрот!");
-                    System.out.printf("Пройдено дней со старта - %d\n", Globals.days);
+                    System.out.printf("Пройдено дней со старта - %d\n", time.getDays());
                     String[] ruTypes = Products.productsToRussian();
+                    int[] sells = statistics.getSells();
                     for (i = 0; i < Products.values().length; i++) {
-                        System.out.printf("Продано товаров типа %s - %d\n", ruTypes[i], Globals.sells[i]);
+                        System.out.printf("Продано товаров типа %s - %d\n", ruTypes[i], sells[i]);
                     }
-                    System.out.printf("Финальная вместительность магазина - %d\n", Globals.capacity);
+                    System.out.printf("Финальная вместительность магазина - %d\n", supermarketState.getCapacity());
                     System.out.println("Конец игры");
                     return;
                 }
                 list.decreaseDaysBeforeExpiration();
                 System.out.println("Конец рабочего дня");
-                System.out.printf("Расходы - %d\n", 10 * Globals.capacity);
-                Globals.money -= 10 * Globals.capacity;
+                System.out.printf("Расходы - %d\n", supermarketState.maintenance());
                 System.out.println("Введите что-нибудь, чтобы начать следующий день");
                 scanner.nextInt();
-                Globals.hours = 8;
-                Globals.minutes = 0;
-                Globals.days++;
-                System.out.printf("День %d\n", Globals.days);
+                time.nextDay();
+                System.out.printf("День %d\n", time.getDays());
             }
-            System.out.printf("Время: %02d:%02d\n", Globals.hours, Globals.minutes);
-            System.out.printf("Деньги: %d\n", Globals.money);
+            System.out.printf("Время: %02d:%02d\n", time.getHours(), time.getMinutes());
+            System.out.printf("Деньги: %d\n", supermarketState.getMoney());
             System.out.printf("Заполненность торгового зала - %d/%d\n",
-                    Globals.quantityInShoppingRoom, Globals.capacity);
+                    supermarketState.getQuantityInShoppingRoom(), supermarketState.getCapacity());
             System.out.println("Управление:");
             System.out.println("1. Ждать время");
             System.out.println("2. Таблица товаров");
@@ -75,10 +72,10 @@ public class Main {
                         i = scanner.nextInt();
 
                         switch (i) {
-                            case 1 -> Utils.waitTime(list, 1);
-                            case 2 -> Utils.waitTime(list, 6);
-                            case 3 -> Utils.waitTime(list, 48);
-                            case 4 -> Utils.waitTime(list, 0);
+                            case 1 -> time.waitTime(1);
+                            case 2 -> time.waitTime(6);
+                            case 3 -> time.waitTime(48);
+                            case 4 -> time.waitTime(0);
                             case 5 -> {
                             }
                             default -> {
@@ -165,7 +162,7 @@ public class Main {
                                                     System.out.println("Слишком много перемещаемого товара");
                                                     continue;
                                                 }
-                                                if (Globals.capacity - Globals.quantityInShoppingRoom >= j) {
+                                                if (supermarketState.getCapacity() - supermarketState.getQuantityInShoppingRoom() >= j) {
                                                     list.toShoppingRoom(i, j);
                                                 } else {
                                                     System.out.println("Нет места в торговом зале");
@@ -176,20 +173,28 @@ public class Main {
                                             break;
 
                                         case 3:
-                                            System.out.printf("Количество в торговом зале - %d\n",
-                                                    list.getShoppingRoomQuantity(i));
-                                            System.out.printf("Количество на складе - %d\n",
-                                                    list.getWarehouseQuantity(i));
-                                            System.out.println("Переместить единиц:");
-                                            System.out.print(">");
-                                            j = scanner.nextInt();
+                                            while (true) {
+                                                System.out.printf("Количество в торговом зале - %d\n",
+                                                        list.getShoppingRoomQuantity(i));
+                                                System.out.printf("Количество на складе - %d\n",
+                                                        list.getWarehouseQuantity(i));
+                                                System.out.println("Переместить единиц:");
+                                                System.out.print(">");
+                                                j = scanner.nextInt();
 
-                                            if (j < -list.getWarehouseQuantity(i) ||
-                                                    j > list.getShoppingRoomQuantity(i)) {
-                                                System.out.println("Слишком много перемещаемого товара");
-                                                continue;
+                                                if (j < -list.getWarehouseQuantity(i) ||
+                                                        j > list.getShoppingRoomQuantity(i)) {
+                                                    System.out.println("Слишком много перемещаемого товара");
+                                                    continue;
+                                                }
+                                                if (supermarketState.getCapacity() - supermarketState.getQuantityInShoppingRoom() >= -j) {
+                                                    list.toWarehouse(i, j);
+                                                } else {
+                                                    System.out.println("Нет места в торговом зале");
+                                                    continue;
+                                                }
+                                                break;
                                             }
-                                            list.toWarehouse(i, j);
                                             break;
 
                                         case 4:
@@ -221,11 +226,12 @@ public class Main {
                 case 4:
                     while (true) {
                         String[] ruTypes = Products.productsToRussian();
+                        int[] prices = statistics.getPrices();
                         System.out.println("Вид товара:");
-                        System.out.printf("1. %s (%d денег за единицу)\n", ruTypes[0], Globals.prices[0]);
-                        System.out.printf("2. %s (%d денег за единицу)\n", ruTypes[1], Globals.prices[1]);
-                        System.out.printf("3. %s (%d денег за единицу)\n", ruTypes[2], Globals.prices[2]);
-                        System.out.printf("4. %s (%d денег за единицу)\n", ruTypes[3], Globals.prices[3]);
+                        System.out.printf("1. %s (%d денег за единицу)\n", ruTypes[0], prices[0]);
+                        System.out.printf("2. %s (%d денег за единицу)\n", ruTypes[1], prices[1]);
+                        System.out.printf("3. %s (%d денег за единицу)\n", ruTypes[2], prices[2]);
+                        System.out.printf("4. %s (%d денег за единицу)\n", ruTypes[3], prices[3]);
                         System.out.println("5. Отмена");
                         System.out.print(">");
                         i = scanner.nextInt();
@@ -250,7 +256,7 @@ public class Main {
                     int k;
 
                     while (true) {
-                        System.out.printf("Итоговая цена - %d\n", Globals.prices[i - 1] * j);
+                        System.out.printf("Итоговая цена - %d\n", statistics.getPrices()[i - 1] * j);
                         System.out.println("Купить?");
                         System.out.println("1. Да");
                         System.out.println("2. Нет");
@@ -267,11 +273,11 @@ public class Main {
                         break;
                     }
 
-                    if (Globals.money >= Globals.prices[i - 1] * j) {
+                    if (supermarketState.getMoney() >= statistics.getPrices()[i - 1] * j) {
                         System.out.println("Цена за единицу товара для продажи:");
                         System.out.print(">");
                         k = scanner.nextInt();
-                        Globals.money -= Globals.prices[i - 1] * j;
+                        supermarketState.setMoney(supermarketState.getMoney() - statistics.getPrices()[i - 1] * j);
                         list.add(Products.values()[i - 1], j, k);
                     } else {
                         System.out.println("Недостаточно денег");
@@ -280,7 +286,7 @@ public class Main {
 
                 case 5:
                     while (true) {
-                        System.out.printf("Текущая вместимость - %d\n", Globals.capacity);
+                        System.out.printf("Текущая вместимость - %d\n", supermarketState.getCapacity());
                         System.out.println("Увеличить на:");
                         System.out.println("1. 10 единиц (1000 денежных единиц)");
                         System.out.println("2. 50 единиц (5000 денежных единиц)");
@@ -291,27 +297,24 @@ public class Main {
 
                         switch (i) {
                             case 1:
-                                if (Globals.money >= 1000) {
-                                    Globals.money -= 1000;
-                                    Globals.capacity += 10;
+                                if (supermarketState.getMoney() >= 1000) {
+                                    supermarketState.increaseCapacity(1);
                                 } else {
                                     System.out.println("Недостаточно денег");
                                 }
                                 break;
 
                             case 2:
-                                if (Globals.money >= 5000) {
-                                    Globals.money -= 5000;
-                                    Globals.capacity += 50;
+                                if (supermarketState.getMoney() >= 5000) {
+                                    supermarketState.increaseCapacity(5);
                                 } else {
                                     System.out.println("Недостаточно денег");
                                 }
                                 break;
 
                             case 3:
-                                if (Globals.money >= 10000) {
-                                    Globals.money -= 10000;
-                                    Globals.capacity += 100;
+                                if (supermarketState.getMoney() >= 10000) {
+                                    supermarketState.increaseCapacity(10);
                                 } else {
                                     System.out.println("Недостаточно денег");
                                 }

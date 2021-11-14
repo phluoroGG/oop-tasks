@@ -3,6 +3,8 @@ package edu.csf.oop.java.supermarket;
 import java.util.ArrayList;
 import java.util.List;
 
+import static edu.csf.oop.java.supermarket.Main.supermarketState;
+
 public class ListOfGoods {
     private static class Product {
         private final Products type;
@@ -199,7 +201,7 @@ public class ListOfGoods {
     public void toWarehouse(int position, int quantity) {
         list.get(position).setWarehouseQuantity(list.get(position).getWarehouseQuantity() + quantity);
         list.get(position).setShoppingRoomQuantity(list.get(position).getShoppingRoomQuantity() - quantity);
-        Globals.quantityInShoppingRoom -= quantity;
+        supermarketState.setQuantityInShoppingRoom(supermarketState.getQuantityInShoppingRoom() - quantity);
         warehouseQuantityList[list.get(position).getType().ordinal()] += quantity;
         shoppingRoomQuantityList[list.get(position).getType().ordinal()] -= quantity;
     }
@@ -207,7 +209,7 @@ public class ListOfGoods {
     public void toShoppingRoom(int position, int quantity) {
         list.get(position).setShoppingRoomQuantity(list.get(position).getShoppingRoomQuantity() + quantity);
         list.get(position).setWarehouseQuantity(list.get(position).getWarehouseQuantity() - quantity);
-        Globals.quantityInShoppingRoom += quantity;
+        supermarketState.setQuantityInShoppingRoom(supermarketState.getQuantityInShoppingRoom() + quantity);
         warehouseQuantityList[list.get(position).getType().ordinal()] -= quantity;
         shoppingRoomQuantityList[list.get(position).getType().ordinal()] += quantity;
     }
