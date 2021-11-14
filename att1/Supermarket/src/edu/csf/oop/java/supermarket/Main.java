@@ -19,55 +19,55 @@ public class Main {
         list = new ListOfGoods();
         statistics = new Statistics();
 
-        System.out.printf("День %d\n", time.getDays());
+        System.out.printf("Р”РµРЅСЊ %d\n", time.getDays());
 
         while (true) {
             if (time.isEndOfDay()) {
                 if (list.isEmpty() && supermarketState.getMoney() < 0) {
-                    System.out.println("У вас отрицательный баланс и отсутствуют товары! Вы - банкрот!");
-                    System.out.printf("Пройдено дней со старта - %d\n", time.getDays());
+                    System.out.println("РЈ РІР°СЃ РѕС‚СЂРёС†Р°С‚РµР»СЊРЅС‹Р№ Р±Р°Р»Р°РЅСЃ Рё РѕС‚СЃСѓС‚СЃС‚РІСѓСЋС‚ С‚РѕРІР°СЂС‹! Р’С‹ - Р±Р°РЅРєСЂРѕС‚!");
+                    System.out.printf("РџСЂРѕР№РґРµРЅРѕ РґРЅРµР№ СЃРѕ СЃС‚Р°СЂС‚Р° - %d\n", time.getDays());
                     String[] ruTypes = Products.productsToRussian();
                     int[] sells = statistics.getSells();
                     for (i = 0; i < Products.values().length; i++) {
-                        System.out.printf("Продано товаров типа %s - %d\n", ruTypes[i], sells[i]);
+                        System.out.printf("РџСЂРѕРґР°РЅРѕ С‚РѕРІР°СЂРѕРІ С‚РёРїР° %s - %d\n", ruTypes[i], sells[i]);
                     }
-                    System.out.printf("Финальная вместительность магазина - %d\n", supermarketState.getCapacity());
-                    System.out.println("Конец игры");
+                    System.out.printf("Р¤РёРЅР°Р»СЊРЅР°СЏ РІРјРµСЃС‚РёС‚РµР»СЊРЅРѕСЃС‚СЊ РјР°РіР°Р·РёРЅР° - %d\n", supermarketState.getCapacity());
+                    System.out.println("РљРѕРЅРµС† РёРіСЂС‹");
                     return;
                 }
                 list.decreaseDaysBeforeExpiration();
-                System.out.println("Конец рабочего дня");
-                System.out.printf("Расходы - %d\n", supermarketState.maintenance());
-                System.out.println("Введите что-нибудь, чтобы начать следующий день");
+                System.out.println("РљРѕРЅРµС† СЂР°Р±РѕС‡РµРіРѕ РґРЅСЏ");
+                System.out.printf("Р Р°СЃС…РѕРґС‹ - %d\n", supermarketState.maintenance());
+                System.out.println("Р’РІРµРґРёС‚Рµ С‡С‚Рѕ-РЅРёР±СѓРґСЊ, С‡С‚РѕР±С‹ РЅР°С‡Р°С‚СЊ СЃР»РµРґСѓСЋС‰РёР№ РґРµРЅСЊ");
                 scanner.nextInt();
                 time.nextDay();
-                System.out.printf("День %d\n", time.getDays());
+                System.out.printf("Р”РµРЅСЊ %d\n", time.getDays());
             }
-            System.out.printf("Время: %02d:%02d\n", time.getHours(), time.getMinutes());
-            System.out.printf("Деньги: %d\n", supermarketState.getMoney());
-            System.out.printf("Заполненность торгового зала - %d/%d\n",
+            System.out.printf("Р’СЂРµРјСЏ: %02d:%02d\n", time.getHours(), time.getMinutes());
+            System.out.printf("Р”РµРЅСЊРіРё: %d\n", supermarketState.getMoney());
+            System.out.printf("Р—Р°РїРѕР»РЅРµРЅРЅРѕСЃС‚СЊ С‚РѕСЂРіРѕРІРѕРіРѕ Р·Р°Р»Р° - %d/%d\n",
                     supermarketState.getQuantityInShoppingRoom(), supermarketState.getCapacity());
-            System.out.println("Управление:");
-            System.out.println("1. Ждать время");
-            System.out.println("2. Таблица товаров");
-            System.out.println("3. Статистика товаров");
-            System.out.println("4. Закупить товары");
-            System.out.println("5. Увеличить вместимость торгового зала");
-            System.out.println("6. Ликвидировать просроченный товар");
-            System.out.println("7. Сделать скидку на почти просрочившийся товар");
-            System.out.println("8. Выйти");
+            System.out.println("РЈРїСЂР°РІР»РµРЅРёРµ:");
+            System.out.println("1. Р–РґР°С‚СЊ РІСЂРµРјСЏ");
+            System.out.println("2. РўР°Р±Р»РёС†Р° С‚РѕРІР°СЂРѕРІ");
+            System.out.println("3. РЎС‚Р°С‚РёСЃС‚РёРєР° С‚РѕРІР°СЂРѕРІ");
+            System.out.println("4. Р—Р°РєСѓРїРёС‚СЊ С‚РѕРІР°СЂС‹");
+            System.out.println("5. РЈРІРµР»РёС‡РёС‚СЊ РІРјРµСЃС‚РёРјРѕСЃС‚СЊ С‚РѕСЂРіРѕРІРѕРіРѕ Р·Р°Р»Р°");
+            System.out.println("6. Р›РёРєРІРёРґРёСЂРѕРІР°С‚СЊ РїСЂРѕСЃСЂРѕС‡РµРЅРЅС‹Р№ С‚РѕРІР°СЂ");
+            System.out.println("7. РЎРґРµР»Р°С‚СЊ СЃРєРёРґРєСѓ РЅР° РїРѕС‡С‚Рё РїСЂРѕСЃСЂРѕС‡РёРІС€РёР№СЃСЏ С‚РѕРІР°СЂ");
+            System.out.println("8. Р’С‹Р№С‚Рё");
             System.out.print(">");
             i = scanner.nextInt();
 
             switch (i) {
                 case 1:
                     while (true) {
-                        System.out.println("Время ожидания:");
-                        System.out.println("1. 10 минут");
-                        System.out.println("2. 1 час");
-                        System.out.println("3. 8 часов");
-                        System.out.println("4. До конца рабочего дня");
-                        System.out.println("5. Отмена");
+                        System.out.println("Р’СЂРµРјСЏ РѕР¶РёРґР°РЅРёСЏ:");
+                        System.out.println("1. 10 РјРёРЅСѓС‚");
+                        System.out.println("2. 1 С‡Р°СЃ");
+                        System.out.println("3. 8 С‡Р°СЃРѕРІ");
+                        System.out.println("4. Р”Рѕ РєРѕРЅС†Р° СЂР°Р±РѕС‡РµРіРѕ РґРЅСЏ");
+                        System.out.println("5. РћС‚РјРµРЅР°");
                         System.out.print(">");
                         i = scanner.nextInt();
 
@@ -79,7 +79,7 @@ public class Main {
                             case 5 -> {
                             }
                             default -> {
-                                System.out.println("Повторите ввод");
+                                System.out.println("РџРѕРІС‚РѕСЂРёС‚Рµ РІРІРѕРґ");
                                 continue;
                             }
                         }
@@ -90,18 +90,18 @@ public class Main {
                 case 2:
                     while (true) {
                         String[] ruTypes = Products.productsToRussian();
-                        System.out.println("Вывести информацию:");
-                        System.out.println("1. Все товары");
+                        System.out.println("Р’С‹РІРµСЃС‚Рё РёРЅС„РѕСЂРјР°С†РёСЋ:");
+                        System.out.println("1. Р’СЃРµ С‚РѕРІР°СЂС‹");
                         System.out.printf("2. %s\n", ruTypes[0]);
                         System.out.printf("3. %s\n", ruTypes[1]);
                         System.out.printf("4. %s\n", ruTypes[2]);
                         System.out.printf("5. %s\n", ruTypes[3]);
-                        System.out.println("6. Отмена");
+                        System.out.println("6. РћС‚РјРµРЅР°");
                         System.out.print(">");
                         i = scanner.nextInt();
 
                         if (i != 1 && i != 2 && i != 3 && i != 4 && i != 5 && i != 6) {
-                            System.out.println("Повторите ввод");
+                            System.out.println("РџРѕРІС‚РѕСЂРёС‚Рµ РІРІРѕРґ");
                         } else {
                             break;
                         }
@@ -111,37 +111,41 @@ public class Main {
                     }
 
                     Utils.showInfo(list, i);
-                    System.out.println("1. Выбрать продукт");
-                    System.out.println("2. Вернуться");
-                    System.out.print(">");
-                    i = scanner.nextInt();
 
                     while (true) {
+                        System.out.println("1. Р’С‹Р±СЂР°С‚СЊ РїСЂРѕРґСѓРєС‚");
+                        System.out.println("2. Р’РµСЂРЅСѓС‚СЊСЃСЏ");
+                        System.out.print(">");
+                        i = scanner.nextInt();
                         switch (i) {
                             case 1:
+                                if (list.isEmpty()) {
+                                    System.out.println("РќРµС‚ С‚РѕРІР°СЂРѕРІ");
+                                    break;
+                                }
                                 while (true) {
-                                    System.out.println("Выберите номер");
+                                    System.out.println("Р’С‹Р±РµСЂРёС‚Рµ РЅРѕРјРµСЂ");
                                     System.out.print(">");
                                     i = scanner.nextInt();
 
                                     if (i >= list.size()) {
-                                        System.out.println("Больше, чем размер списка");
+                                        System.out.println("Р‘РѕР»СЊС€Рµ, С‡РµРј СЂР°Р·РјРµСЂ СЃРїРёСЃРєР°");
                                         continue;
                                     }
                                     break;
                                 }
-                                System.out.println("Выберите действие");
-                                System.out.println("1. Изменить цену");
-                                System.out.println("2. Переместить в торговый зал");
-                                System.out.println("3. Переместить на склад");
-                                System.out.println("4. Отмена");
+                                System.out.println("Р’С‹Р±РµСЂРёС‚Рµ РґРµР№СЃС‚РІРёРµ");
+                                System.out.println("1. РР·РјРµРЅРёС‚СЊ С†РµРЅСѓ");
+                                System.out.println("2. РџРµСЂРµРјРµСЃС‚РёС‚СЊ РІ С‚РѕСЂРіРѕРІС‹Р№ Р·Р°Р»");
+                                System.out.println("3. РџРµСЂРµРјРµСЃС‚РёС‚СЊ РЅР° СЃРєР»Р°Рґ");
+                                System.out.println("4. РћС‚РјРµРЅР°");
                                 j = scanner.nextInt();
 
                                 while (true) {
                                     switch (j) {
                                         case 1:
-                                            System.out.printf("Текущая цена - %d\n", list.getPrice(i));
-                                            System.out.println("Новая цена:");
+                                            System.out.printf("РўРµРєСѓС‰Р°СЏ С†РµРЅР° - %d\n", list.getPrice(i));
+                                            System.out.println("РќРѕРІР°СЏ С†РµРЅР°:");
                                             System.out.print(">");
                                             j = scanner.nextInt();
                                             list.setPrice(i, j);
@@ -149,23 +153,23 @@ public class Main {
 
                                         case 2:
                                             while (true) {
-                                                System.out.printf("Количество на складе - %d\n",
+                                                System.out.printf("РљРѕР»РёС‡РµСЃС‚РІРѕ РЅР° СЃРєР»Р°РґРµ - %d\n",
                                                         list.getWarehouseQuantity(i));
-                                                System.out.printf("Количество в торговом зале - %d\n",
+                                                System.out.printf("РљРѕР»РёС‡РµСЃС‚РІРѕ РІ С‚РѕСЂРіРѕРІРѕРј Р·Р°Р»Рµ - %d\n",
                                                         list.getShoppingRoomQuantity(i));
-                                                System.out.println("Переместить единиц:");
+                                                System.out.println("РџРµСЂРµРјРµСЃС‚РёС‚СЊ РµРґРёРЅРёС†:");
                                                 System.out.print(">");
                                                 j = scanner.nextInt();
 
                                                 if (j < -list.getShoppingRoomQuantity(i) ||
                                                         j > list.getWarehouseQuantity(i)) {
-                                                    System.out.println("Слишком много перемещаемого товара");
+                                                    System.out.println("РЎР»РёС€РєРѕРј РјРЅРѕРіРѕ РїРµСЂРµРјРµС‰Р°РµРјРѕРіРѕ С‚РѕРІР°СЂР°");
                                                     continue;
                                                 }
                                                 if (supermarketState.getCapacity() - supermarketState.getQuantityInShoppingRoom() >= j) {
                                                     list.toShoppingRoom(i, j);
                                                 } else {
-                                                    System.out.println("Нет места в торговом зале");
+                                                    System.out.println("РќРµС‚ РјРµСЃС‚Р° РІ С‚РѕСЂРіРѕРІРѕРј Р·Р°Р»Рµ");
                                                     continue;
                                                 }
                                                 break;
@@ -174,23 +178,23 @@ public class Main {
 
                                         case 3:
                                             while (true) {
-                                                System.out.printf("Количество в торговом зале - %d\n",
+                                                System.out.printf("РљРѕР»РёС‡РµСЃС‚РІРѕ РІ С‚РѕСЂРіРѕРІРѕРј Р·Р°Р»Рµ - %d\n",
                                                         list.getShoppingRoomQuantity(i));
-                                                System.out.printf("Количество на складе - %d\n",
+                                                System.out.printf("РљРѕР»РёС‡РµСЃС‚РІРѕ РЅР° СЃРєР»Р°РґРµ - %d\n",
                                                         list.getWarehouseQuantity(i));
-                                                System.out.println("Переместить единиц:");
+                                                System.out.println("РџРµСЂРµРјРµСЃС‚РёС‚СЊ РµРґРёРЅРёС†:");
                                                 System.out.print(">");
                                                 j = scanner.nextInt();
 
                                                 if (j < -list.getWarehouseQuantity(i) ||
                                                         j > list.getShoppingRoomQuantity(i)) {
-                                                    System.out.println("Слишком много перемещаемого товара");
+                                                    System.out.println("РЎР»РёС€РєРѕРј РјРЅРѕРіРѕ РїРµСЂРµРјРµС‰Р°РµРјРѕРіРѕ С‚РѕРІР°СЂР°");
                                                     continue;
                                                 }
                                                 if (supermarketState.getCapacity() - supermarketState.getQuantityInShoppingRoom() >= -j) {
                                                     list.toWarehouse(i, j);
                                                 } else {
-                                                    System.out.println("Нет места в торговом зале");
+                                                    System.out.println("РќРµС‚ РјРµСЃС‚Р° РІ С‚РѕСЂРіРѕРІРѕРј Р·Р°Р»Рµ");
                                                     continue;
                                                 }
                                                 break;
@@ -201,7 +205,7 @@ public class Main {
                                             break;
 
                                         default:
-                                            System.out.println("Повторите ввод");
+                                            System.out.println("РџРѕРІС‚РѕСЂРёС‚Рµ РІРІРѕРґ");
                                             continue;
                                     }
                                     break;
@@ -212,7 +216,7 @@ public class Main {
                                 break;
 
                             default:
-                                System.out.println("Повторите ввод");
+                                System.out.println("РџРѕРІС‚РѕСЂРёС‚Рµ РІРІРѕРґ");
                                 continue;
                         }
                         break;
@@ -227,17 +231,17 @@ public class Main {
                     while (true) {
                         String[] ruTypes = Products.productsToRussian();
                         int[] prices = statistics.getPrices();
-                        System.out.println("Вид товара:");
-                        System.out.printf("1. %s (%d денег за единицу)\n", ruTypes[0], prices[0]);
-                        System.out.printf("2. %s (%d денег за единицу)\n", ruTypes[1], prices[1]);
-                        System.out.printf("3. %s (%d денег за единицу)\n", ruTypes[2], prices[2]);
-                        System.out.printf("4. %s (%d денег за единицу)\n", ruTypes[3], prices[3]);
-                        System.out.println("5. Отмена");
+                        System.out.println("Р’РёРґ С‚РѕРІР°СЂР°:");
+                        System.out.printf("1. %s (%d РґРµРЅРµРі Р·Р° РµРґРёРЅРёС†Сѓ)\n", ruTypes[0], prices[0]);
+                        System.out.printf("2. %s (%d РґРµРЅРµРі Р·Р° РµРґРёРЅРёС†Сѓ)\n", ruTypes[1], prices[1]);
+                        System.out.printf("3. %s (%d РґРµРЅРµРі Р·Р° РµРґРёРЅРёС†Сѓ)\n", ruTypes[2], prices[2]);
+                        System.out.printf("4. %s (%d РґРµРЅРµРі Р·Р° РµРґРёРЅРёС†Сѓ)\n", ruTypes[3], prices[3]);
+                        System.out.println("5. РћС‚РјРµРЅР°");
                         System.out.print(">");
                         i = scanner.nextInt();
 
                         if (i != 1 && i != 2 && i != 3 && i != 4 && i != 5) {
-                            System.out.println("Повторите ввод");
+                            System.out.println("РџРѕРІС‚РѕСЂРёС‚Рµ РІРІРѕРґ");
                         } else {
                             break;
                         }
@@ -246,7 +250,7 @@ public class Main {
                         break;
                     }
 
-                    System.out.println("Количество (шт.):");
+                    System.out.println("РљРѕР»РёС‡РµСЃС‚РІРѕ (С€С‚.):");
                     System.out.print(">");
                     j = scanner.nextInt();
 
@@ -256,15 +260,15 @@ public class Main {
                     int k;
 
                     while (true) {
-                        System.out.printf("Итоговая цена - %d\n", statistics.getPrices()[i - 1] * j);
-                        System.out.println("Купить?");
-                        System.out.println("1. Да");
-                        System.out.println("2. Нет");
+                        System.out.printf("РС‚РѕРіРѕРІР°СЏ С†РµРЅР° - %d\n", statistics.getPrices()[i - 1] * j);
+                        System.out.println("РљСѓРїРёС‚СЊ?");
+                        System.out.println("1. Р”Р°");
+                        System.out.println("2. РќРµС‚");
                         System.out.print(">");
                         k = scanner.nextInt();
 
                         if (k != 1 && k != 2) {
-                            System.out.println("Повторите ввод");
+                            System.out.println("РџРѕРІС‚РѕСЂРёС‚Рµ РІРІРѕРґ");
                         } else {
                             break;
                         }
@@ -274,24 +278,24 @@ public class Main {
                     }
 
                     if (supermarketState.getMoney() >= statistics.getPrices()[i - 1] * j) {
-                        System.out.println("Цена за единицу товара для продажи:");
+                        System.out.println("Р¦РµРЅР° Р·Р° РµРґРёРЅРёС†Сѓ С‚РѕРІР°СЂР° РґР»СЏ РїСЂРѕРґР°Р¶Рё:");
                         System.out.print(">");
                         k = scanner.nextInt();
                         supermarketState.setMoney(supermarketState.getMoney() - statistics.getPrices()[i - 1] * j);
                         list.add(Products.values()[i - 1], j, k);
                     } else {
-                        System.out.println("Недостаточно денег");
+                        System.out.println("РќРµРґРѕСЃС‚Р°С‚РѕС‡РЅРѕ РґРµРЅРµРі");
                     }
                     break;
 
                 case 5:
                     while (true) {
-                        System.out.printf("Текущая вместимость - %d\n", supermarketState.getCapacity());
-                        System.out.println("Увеличить на:");
-                        System.out.println("1. 10 единиц (1000 денежных единиц)");
-                        System.out.println("2. 50 единиц (5000 денежных единиц)");
-                        System.out.println("3. 100 единиц (10000 денежных единиц)");
-                        System.out.println("4. Отмена");
+                        System.out.printf("РўРµРєСѓС‰Р°СЏ РІРјРµСЃС‚РёРјРѕСЃС‚СЊ - %d\n", supermarketState.getCapacity());
+                        System.out.println("РЈРІРµР»РёС‡РёС‚СЊ РЅР°:");
+                        System.out.println("1. 10 РµРґРёРЅРёС† (1000 РґРµРЅРµР¶РЅС‹С… РµРґРёРЅРёС†)");
+                        System.out.println("2. 50 РµРґРёРЅРёС† (5000 РґРµРЅРµР¶РЅС‹С… РµРґРёРЅРёС†)");
+                        System.out.println("3. 100 РµРґРёРЅРёС† (10000 РґРµРЅРµР¶РЅС‹С… РµРґРёРЅРёС†)");
+                        System.out.println("4. РћС‚РјРµРЅР°");
                         System.out.print(">");
                         i = scanner.nextInt();
 
@@ -300,7 +304,7 @@ public class Main {
                                 if (supermarketState.getMoney() >= 1000) {
                                     supermarketState.increaseCapacity(1);
                                 } else {
-                                    System.out.println("Недостаточно денег");
+                                    System.out.println("РќРµРґРѕСЃС‚Р°С‚РѕС‡РЅРѕ РґРµРЅРµРі");
                                 }
                                 break;
 
@@ -308,7 +312,7 @@ public class Main {
                                 if (supermarketState.getMoney() >= 5000) {
                                     supermarketState.increaseCapacity(5);
                                 } else {
-                                    System.out.println("Недостаточно денег");
+                                    System.out.println("РќРµРґРѕСЃС‚Р°С‚РѕС‡РЅРѕ РґРµРЅРµРі");
                                 }
                                 break;
 
@@ -316,7 +320,7 @@ public class Main {
                                 if (supermarketState.getMoney() >= 10000) {
                                     supermarketState.increaseCapacity(10);
                                 } else {
-                                    System.out.println("Недостаточно денег");
+                                    System.out.println("РќРµРґРѕСЃС‚Р°С‚РѕС‡РЅРѕ РґРµРЅРµРі");
                                 }
                                 break;
 
@@ -324,7 +328,7 @@ public class Main {
                                 break;
 
                             default:
-                                System.out.println("Повторите ввод.");
+                                System.out.println("РџРѕРІС‚РѕСЂРёС‚Рµ РІРІРѕРґ.");
                                 continue;
                         }
                         break;
@@ -334,11 +338,11 @@ public class Main {
 
                 case 6:
                     int removed = list.removeExpiredProducts();
-                    System.out.printf("Убрано %d единиц товара\n", removed);
+                    System.out.printf("РЈР±СЂР°РЅРѕ %d РµРґРёРЅРёС† С‚РѕРІР°СЂР°\n", removed);
                     break;
 
                 case 7:
-                    System.out.println("Сделать скидку (%):");
+                    System.out.println("РЎРґРµР»Р°С‚СЊ СЃРєРёРґРєСѓ (%):");
                     System.out.println(">");
                     i = scanner.nextInt();
                     list.makeDiscountOnAlmostExpiredGoods(i);
@@ -348,7 +352,7 @@ public class Main {
                     return;
 
                 default:
-                    System.out.println("Повторите ввод.");
+                    System.out.println("РџРѕРІС‚РѕСЂРёС‚Рµ РІРІРѕРґ.");
             }
         }
     }

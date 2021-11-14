@@ -7,7 +7,7 @@ public enum Products {
     ALCOHOL;
 
     public static String[] productsToRussian() {
-        return new String[]{"Молоко", "Мясо", "Фрукты", "Алкоголь"};
+        return new String[]{"РњРѕР»РѕРєРѕ", "РњСЏСЃРѕ", "Р¤СЂСѓРєС‚С‹", "РђР»РєРѕРіРѕР»СЊ"};
     }
 }
 
