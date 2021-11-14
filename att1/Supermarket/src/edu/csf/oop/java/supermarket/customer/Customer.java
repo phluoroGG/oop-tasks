@@ -1,10 +1,13 @@
-package edu.csf.oop.java.supermarket;
+package edu.csf.oop.java.supermarket.customer;
+
+import edu.csf.oop.java.supermarket.productsInfo.Products;
+import edu.csf.oop.java.supermarket.utils.Utils;
 
 import java.util.Random;
 
 import static edu.csf.oop.java.supermarket.Main.statistics;
 
-class Customer {
+public class Customer {
     private static class Demand {
         private Products type;
         private int quantity;

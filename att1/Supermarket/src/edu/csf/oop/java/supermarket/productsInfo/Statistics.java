@@ -1,4 +1,4 @@
-package edu.csf.oop.java.supermarket;
+package edu.csf.oop.java.supermarket.productsInfo;
 
 public class Statistics {
     private final int[] prices;

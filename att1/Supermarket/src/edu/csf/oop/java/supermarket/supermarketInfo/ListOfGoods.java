@@ -1,4 +1,7 @@
-package edu.csf.oop.java.supermarket;
+package edu.csf.oop.java.supermarket.supermarketInfo;
+
+import edu.csf.oop.java.supermarket.customer.Customer;
+import edu.csf.oop.java.supermarket.productsInfo.Products;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,6 @@
-package edu.csf.oop.java.supermarket;
+package edu.csf.oop.java.supermarket.time;
+
+import edu.csf.oop.java.supermarket.utils.Utils;
 
 public class Time {
     private int days;

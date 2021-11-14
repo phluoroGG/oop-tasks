@@ -1,4 +1,7 @@
-package edu.csf.oop.java.supermarket;
+package edu.csf.oop.java.supermarket.utils;
+
+import edu.csf.oop.java.supermarket.productsInfo.Products;
+import edu.csf.oop.java.supermarket.supermarketInfo.ListOfGoods;
 
 import java.util.List;
 import java.util.Random;
