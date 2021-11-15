@@ -9,7 +9,6 @@ import java.util.Random;
 import static edu.csf.oop.java.supermarket.Main.*;
 
 public class Utils {
-
     public static void sell() {
         int[] sellsAndMoney = list.sell();
         supermarketState.setMoney(supermarketState.getMoney() + sellsAndMoney[sellsAndMoney.length - 1]);
@@ -34,7 +33,7 @@ public class Utils {
         if (goodsType == 1) {
             for (int i = 0; i < list.size(); i++) {
                 System.out.printf("|%5s|%8s|%16s|%20s|%26s|%4s|%43s|\n",
-                        i,
+                        i + 1,
                         ruTypes[list.getType(i).ordinal()],
                         list.getWarehouseQuantity(i) + list.getShoppingRoomQuantity(i),
                         list.getWarehouseQuantity(i),
@@ -46,7 +45,7 @@ public class Utils {
             positions = list.getPositions(Products.values()[goodsType - 2]);
             for (Integer position : positions) {
                 System.out.printf("|%5s|%8s|%16s|%20s|%26s|%4s|%43s|\n",
-                        position,
+                        position + 1,
                         ruTypes[list.getType(position).ordinal()],
                         list.getWarehouseQuantity(position) + list.getShoppingRoomQuantity(position),
                         list.getWarehouseQuantity(position),

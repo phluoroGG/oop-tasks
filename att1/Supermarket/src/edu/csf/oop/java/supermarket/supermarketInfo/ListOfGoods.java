@@ -1,7 +1,10 @@
 package edu.csf.oop.java.supermarket.supermarketInfo;
 
+import edu.csf.oop.java.supermarket.Main;
 import edu.csf.oop.java.supermarket.customer.Customer;
 import edu.csf.oop.java.supermarket.productsInfo.Products;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -9,6 +12,10 @@ import java.util.List;
 import static edu.csf.oop.java.supermarket.Main.supermarketState;
 
 public class ListOfGoods {
+
+    private static final Logger logger
+            = LoggerFactory.getLogger(Main.class);
+
     private static class Product {
         private final Products type;
         private int warehouseQuantity;
@@ -68,10 +75,12 @@ public class ListOfGoods {
         Product product = new Product(type, quantity, price);
         list.add(product);
         warehouseQuantityList[product.getType().ordinal()] += product.getWarehouseQuantity();
+        logger.info("Add product, type - {}, quantity - {}, price - {}", type, quantity, price);
     }
 
     public int[] sell() {
         Customer customer = new Customer();
+        logger.info("Customer came with {} money", customer.getMoney());
         int money = 0;
         int length = Products.values().length;
         int[] sellsAndMoney = new int[length + 1];
@@ -85,6 +94,7 @@ public class ListOfGoods {
             }
             List<Integer> posToRemove = new ArrayList<>();
             for (Integer position : posList) {
+                int tempQuantity = quantity;
                 int productQuantity = list.get(position).getShoppingRoomQuantity();
                 int productPrice = list.get(position).getPrice();
                 int daysBeforeExpiration = list.get(position).getDaysBeforeExpiration();
@@ -119,6 +129,8 @@ public class ListOfGoods {
                     list.get(position).setShoppingRoomQuantity(productQuantity - quantity);
                     quantity = 0;
                 }
+                logger.info("Purchased a product, type - {}, quantity - {}, price - {}",
+                        type, tempQuantity, productPrice);
                 if (quantity == 0) {
                     break;
                 }
@@ -143,13 +155,13 @@ public class ListOfGoods {
 
     public int removeExpiredProducts() {
         int removed = 0;
-        int i = 0;
-        while (i < list.size()) {
-            if (list.get(i).getDaysBeforeExpiration() <= 0) {
-                removed += list.get(i).getWarehouseQuantity();
-                list.remove(list.get(i));
-            } else {
-                i++;
+        for (int i = 0; i < list.size(); i++) {
+            Product product = list.get(i);
+            if (product.getDaysBeforeExpiration() <= 0) {
+                removed += product.getWarehouseQuantity() + product.getShoppingRoomQuantity();
+                list.remove(product);
+                logger.info("Removed expired product, type - {}, quantity - {}, price - {}",
+                        product.type, product.warehouseQuantity + product.shoppingRoomQuantity, product.price);
             }
         }
         return removed;
@@ -198,7 +210,9 @@ public class ListOfGoods {
     }
 
     public void setPrice(int position, int price) {
+        int oldPrice = list.get(position).getPrice();
         list.get(position).setPrice(price);
+        logger.info("Changed the price of the product on position {} from {} to {}", position, oldPrice, price);
     }
 
     public void toWarehouse(int position, int quantity) {
@@ -207,6 +221,7 @@ public class ListOfGoods {
         supermarketState.setQuantityInShoppingRoom(supermarketState.getQuantityInShoppingRoom() - quantity);
         warehouseQuantityList[list.get(position).getType().ordinal()] += quantity;
         shoppingRoomQuantityList[list.get(position).getType().ordinal()] -= quantity;
+        logger.info("Moved to the warehouse {} units of the product on position {}", quantity, position);
     }
 
     public void toShoppingRoom(int position, int quantity) {
@@ -215,6 +230,7 @@ public class ListOfGoods {
         supermarketState.setQuantityInShoppingRoom(supermarketState.getQuantityInShoppingRoom() + quantity);
         warehouseQuantityList[list.get(position).getType().ordinal()] -= quantity;
         shoppingRoomQuantityList[list.get(position).getType().ordinal()] += quantity;
+        logger.info("Moved to the shopping room {} units of the product on position {}", quantity, position);
     }
 
     public boolean isEmpty() {

@@ -6,11 +6,16 @@ import edu.csf.oop.java.supermarket.supermarketInfo.ListOfGoods;
 import edu.csf.oop.java.supermarket.supermarketInfo.SupermarketState;
 import edu.csf.oop.java.supermarket.time.Time;
 import edu.csf.oop.java.supermarket.utils.Utils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.util.Locale;
 import java.util.Scanner;
 
 public class Main {
+
+    private static final Logger logger
+            = LoggerFactory.getLogger(Main.class);
 
     public static Time time;
     public static SupermarketState supermarketState;
@@ -25,6 +30,7 @@ public class Main {
         supermarketState = new SupermarketState();
         list = new ListOfGoods();
         statistics = new Statistics();
+        logger.info("Application started");
 
         System.out.printf("День %d\n", time.getDays());
 
@@ -40,6 +46,8 @@ public class Main {
                     }
                     System.out.printf("Финальная вместительность магазина - %d\n", supermarketState.getCapacity());
                     System.out.println("Конец игры");
+                    logger.info("End of the game");
+                    logger.info("Application closed");
                     return;
                 }
                 list.decreaseDaysBeforeExpiration();
@@ -135,12 +143,13 @@ public class Main {
                                     System.out.print(">");
                                     i = scanner.nextInt();
 
-                                    if (i >= list.size()) {
-                                        System.out.println("Больше, чем размер списка");
+                                    if (i > list.size() || i < 1) {
+                                        System.out.println("В списке нет товара с таким номером");
                                         continue;
                                     }
                                     break;
                                 }
+                                i--;
                                 System.out.println("Выберите действие");
                                 System.out.println("1. Изменить цену");
                                 System.out.println("2. Переместить в торговый зал");
@@ -173,8 +182,13 @@ public class Main {
                                                     System.out.println("Слишком много перемещаемого товара");
                                                     continue;
                                                 }
-                                                if (supermarketState.getCapacity() - supermarketState.getQuantityInShoppingRoom() >= j) {
-                                                    list.toShoppingRoom(i, j);
+                                                if (supermarketState.getCapacity() -
+                                                        supermarketState.getQuantityInShoppingRoom() >= j) {
+                                                    if (j < 0) {
+                                                        list.toWarehouse(i, -j);
+                                                    } else {
+                                                        list.toShoppingRoom(i, j);
+                                                    }
                                                 } else {
                                                     System.out.println("Нет места в торговом зале");
                                                     continue;
@@ -198,8 +212,13 @@ public class Main {
                                                     System.out.println("Слишком много перемещаемого товара");
                                                     continue;
                                                 }
-                                                if (supermarketState.getCapacity() - supermarketState.getQuantityInShoppingRoom() >= -j) {
-                                                    list.toWarehouse(i, j);
+                                                if (supermarketState.getCapacity() -
+                                                        supermarketState.getQuantityInShoppingRoom() >= -j) {
+                                                    if (j < 0) {
+                                                        list.toShoppingRoom(i, -j);
+                                                    } else {
+                                                        list.toWarehouse(i, j);
+                                                    }
                                                 } else {
                                                     System.out.println("Нет места в торговом зале");
                                                     continue;
@@ -356,6 +375,7 @@ public class Main {
                     break;
 
                 case 8:
+                    logger.info("Application closed");
                     return;
 
                 default:
