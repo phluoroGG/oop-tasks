@@ -78,6 +78,16 @@ public class ListOfGoods {
         logger.info("Add product, type - {}, quantity - {}, price - {}", type, quantity, price);
     }
 
+    public List<Integer> getPositions(Products type) {
+        List<Integer> posList = new ArrayList<>();
+        for (int i = 0; i < list.size(); i++) {
+            if (list.get(i).getType() == type) {
+                posList.add(i);
+            }
+        }
+        return posList;
+    }
+
     public int[] sell() {
         Customer customer = new Customer();
         logger.info("Customer came with {} money", customer.getMoney());
@@ -86,52 +96,52 @@ public class ListOfGoods {
         int[] sellsAndMoney = new int[length + 1];
         for (int i = 0; i < length; i++) {
             Products type = customer.getType(i);
-            int quantity = customer.getQuantity(i);
-            int price = customer.getPrice(i);
+            int customerQuantity = customer.getQuantity(i);
+            int customerPrice = customer.getPrice(i);
             List<Integer> posList = getPositions(type);
             if (posList.isEmpty()) {
                 continue;
             }
             List<Integer> posToRemove = new ArrayList<>();
             for (Integer position : posList) {
-                int tempQuantity = quantity;
                 int productQuantity = list.get(position).getShoppingRoomQuantity();
                 int productPrice = list.get(position).getPrice();
                 int daysBeforeExpiration = list.get(position).getDaysBeforeExpiration();
-                if (price < productPrice || daysBeforeExpiration <= 0) {
+                if (customerPrice < productPrice || daysBeforeExpiration <= 0) {
                     continue;
                 }
                 if (daysBeforeExpiration == 1) {
-                    productPrice = (int) Math.ceil( (double) productPrice * 4 / 3);
+                    productPrice = (int) Math.ceil((double) productPrice * 4 / 3);
                 }
                 int realQuantity = -1;
                 if (productPrice != 0) {
                     realQuantity = customer.getMoney() / productPrice;
                 }
-                if (realQuantity != -1 && realQuantity < quantity) {
-                    quantity = realQuantity;
+                if (realQuantity != -1 && realQuantity < customerQuantity) {
+                    customerQuantity = realQuantity;
                 }
-                if (productQuantity <= quantity) {
+                int tempQuantity = customerQuantity;
+                if (productQuantity <= customerQuantity) {
                     money += productQuantity * productPrice;
                     customer.setMoney(customer.getMoney() - productQuantity * productPrice);
                     sellsAndMoney[type.ordinal()] += productQuantity;
                     shoppingRoomQuantityList[type.ordinal()] -= productQuantity;
-                    quantity -= productQuantity;
+                    customerQuantity -= productQuantity;
                     list.get(position).setShoppingRoomQuantity(0);
                     if (list.get(position).getWarehouseQuantity() == 0) {
-                        posToRemove.add(position);
+                        posToRemove.add(position - posToRemove.size());
                     }
                 } else {
-                    money += quantity * productPrice;
-                    customer.setMoney(customer.getMoney() - quantity * productPrice);
-                    sellsAndMoney[type.ordinal()] += quantity;
-                    shoppingRoomQuantityList[type.ordinal()] -= quantity;
-                    list.get(position).setShoppingRoomQuantity(productQuantity - quantity);
-                    quantity = 0;
+                    money += customerQuantity * productPrice;
+                    customer.setMoney(customer.getMoney() - customerQuantity * productPrice);
+                    sellsAndMoney[type.ordinal()] += customerQuantity;
+                    shoppingRoomQuantityList[type.ordinal()] -= customerQuantity;
+                    list.get(position).setShoppingRoomQuantity(productQuantity - customerQuantity);
+                    customerQuantity = 0;
                 }
                 logger.info("Purchased a product, type - {}, quantity - {}, price - {}",
-                        type, tempQuantity, productPrice);
-                if (quantity == 0) {
+                        type, tempQuantity - customerQuantity, productPrice);
+                if (customerQuantity == 0) {
                     break;
                 }
             }
@@ -143,16 +153,6 @@ public class ListOfGoods {
         return sellsAndMoney;
     }
 
-    public List<Integer> getPositions(Products type) {
-        List<Integer> posList = new ArrayList<>();
-        for (int i = 0; i < list.size(); i++) {
-            if (list.get(i).getType() == type) {
-                posList.add(i);
-            }
-        }
-        return posList;
-    }
-
     public int removeExpiredProducts() {
         int removed = 0;
         for (int i = 0; i < list.size(); i++) {
@@ -160,17 +160,17 @@ public class ListOfGoods {
             if (product.getDaysBeforeExpiration() <= 0) {
                 removed += product.getWarehouseQuantity() + product.getShoppingRoomQuantity();
                 list.remove(product);
-                logger.info("Removed expired product, type - {}, quantity - {}, price - {}",
-                        product.type, product.warehouseQuantity + product.shoppingRoomQuantity, product.price);
+                logger.info("Removed expired product, type - {}, quantity - {}, price - {}", product.getType(),
+                        product.getWarehouseQuantity() + product.getShoppingRoomQuantity(), product.getPrice());
             }
         }
         return removed;
     }
 
     public void makeDiscountOnAlmostExpiredGoods(int discount) {
-        for (Product product : list) {
-            if (product.getDaysBeforeExpiration() == 1) {
-                product.setPrice( (int) Math.floor( (double) product.getPrice() * (100 - discount) / 100));
+        for (int i = 0; i < list.size(); i++) {
+            if (list.get(i).getDaysBeforeExpiration() == 1) {
+                setPrice(i, (int) Math.floor((double) getPrice(i) * (100 - discount) / 100));
             }
         }
     }

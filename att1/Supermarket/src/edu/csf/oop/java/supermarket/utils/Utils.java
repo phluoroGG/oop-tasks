@@ -85,14 +85,14 @@ public class Utils {
         for (int i = 0; i < length; i++) {
             arr[i] = rnd.nextInt(length);
             while (true) {
-                boolean u = false;
+                boolean isHasEqual = false;
                 for (int j = 0; j < i; j++) {
                     if (arr[j] == arr[i]) {
-                        u = true;
+                        isHasEqual = true;
                         break;
                     }
                 }
-                if (u) {
+                if (isHasEqual) {
                     arr[i] = rnd.nextInt(length);
                 } else {
                     break;

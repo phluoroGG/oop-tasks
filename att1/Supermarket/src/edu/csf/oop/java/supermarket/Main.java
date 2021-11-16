@@ -1,9 +1,7 @@
 package edu.csf.oop.java.supermarket;
 
-import edu.csf.oop.java.supermarket.productsInfo.Products;
-import edu.csf.oop.java.supermarket.productsInfo.Statistics;
-import edu.csf.oop.java.supermarket.supermarketInfo.ListOfGoods;
-import edu.csf.oop.java.supermarket.supermarketInfo.SupermarketState;
+import edu.csf.oop.java.supermarket.productsInfo.*;
+import edu.csf.oop.java.supermarket.supermarketInfo.*;
 import edu.csf.oop.java.supermarket.time.Time;
 import edu.csf.oop.java.supermarket.utils.Utils;
 import org.slf4j.Logger;
