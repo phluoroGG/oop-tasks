@@ -1,22 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/src/edu/csf/oop/java/supermarket/Game.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/edu/csf/oop/java/supermarket/Globals.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/edu/csf/oop/java/supermarket/Main.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/edu/csf/oop/java/supermarket/customer/Customer.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/edu/csf/oop/java/supermarket/customer/Customer.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/edu/csf/oop/java/supermarket/productsInfo/Products.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/edu/csf/oop/java/supermarket/productsInfo/Products.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/edu/csf/oop/java/supermarket/productsInfo/Statistics.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/edu/csf/oop/java/supermarket/productsInfo/Statistics.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/edu/csf/oop/java/supermarket/supermarketInfo/ListOfGoods.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/edu/csf/oop/java/supermarket/supermarketInfo/ListOfGoods.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/edu/csf/oop/java/supermarket/supermarketInfo/SupermarketState.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/edu/csf/oop/java/supermarket/supermarketInfo/SupermarketState.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/edu/csf/oop/java/supermarket/customer/Demand.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/edu/csf/oop/java/supermarket/product/Product.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/edu/csf/oop/java/supermarket/product/ProductType.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/edu/csf/oop/java/supermarket/product/Statistics.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/edu/csf/oop/java/supermarket/services/GameServices.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/edu/csf/oop/java/supermarket/services/Utils.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/edu/csf/oop/java/supermarket/supermarket/ListOfGoods.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/edu/csf/oop/java/supermarket/supermarket/SupermarketState.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/edu/csf/oop/java/supermarket/time/Time.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/edu/csf/oop/java/supermarket/time/Time.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/edu/csf/oop/java/supermarket/utils/Utils.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/edu/csf/oop/java/supermarket/utils/Utils.java" charset="UTF-8" />
     <file url="PROJECT" charset="windows-1251" />
   </component>
 </project>

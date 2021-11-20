@@ -1,51 +1,26 @@
 package edu.csf.oop.java.supermarket.customer;
 
-import edu.csf.oop.java.supermarket.productsInfo.Products;
-import edu.csf.oop.java.supermarket.utils.Utils;
+import edu.csf.oop.java.supermarket.product.ProductType;
+import edu.csf.oop.java.supermarket.services.Utils;
 
 import java.util.Random;
 
-import static edu.csf.oop.java.supermarket.Main.statistics;
-
 public class Customer {
-    private static class Demand {
-        private Products type;
-        private int quantity;
-        private int price;
-
-        public Products getType() {
-            return type;
-        }
-
-        public int getQuantity() {
-            return quantity;
-        }
-
-        public int getPrice() {
-            return price;
-        }
-    }
-
-    private final Demand[] needs = new Demand[Products.values().length];
+    private final int length = ProductType.values().length;
+    private final Demand[] needs = new Demand[length];
     private int money;
 
     public Customer() {
-        int length = Products.values().length;
         int[] priority = Utils.rndIntArr(length);
-        Random rnd = new Random();
-        Products[] types = Products.values();
-        int[] prices = statistics.getPrices();
+        ProductType[] types = ProductType.values();
         for (int i = 0; i < length; i++) {
-            needs[i] = new Demand();
-            needs[i].type = types[priority[i]];
-            needs[i].quantity = rnd.nextInt(5);
-            double factor = 1 + rnd.nextDouble() / 2;
-            needs[i].price = (int) Math.ceil(prices[priority[i]] * factor);
+            needs[i] = new Demand(types[priority[i]]);
         }
+        Random rnd = new Random();
         money = rnd.nextInt(300);
     }
 
-    public Products getType(int pos) {
+    public ProductType getType(int pos) {
         return needs[pos].getType();
     }
 
