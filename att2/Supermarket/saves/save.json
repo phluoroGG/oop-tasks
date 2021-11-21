@@ -1,0 +1,69 @@
+{
+  "time": {
+    "days": 1,
+    "hours": 8,
+    "minutes": 10
+  },
+  "list": {
+    "list": [
+      {
+        "type": "MILK",
+        "warehouseQuantity": 15,
+        "shoppingRoomQuantity": 1,
+        "price": 12,
+        "daysBeforeExpiration": 3
+      },
+      {
+        "type": "MEAT",
+        "warehouseQuantity": 0,
+        "shoppingRoomQuantity": 5,
+        "price": 25,
+        "daysBeforeExpiration": 3
+      },
+      {
+        "type": "FRUIT",
+        "warehouseQuantity": 5,
+        "shoppingRoomQuantity": 5,
+        "price": 37,
+        "daysBeforeExpiration": 3
+      },
+      {
+        "type": "ALCOHOL",
+        "warehouseQuantity": 10,
+        "shoppingRoomQuantity": 4,
+        "price": 50,
+        "daysBeforeExpiration": 3
+      },
+      {
+        "type": "MILK",
+        "warehouseQuantity": 100,
+        "shoppingRoomQuantity": 0,
+        "price": 10,
+        "daysBeforeExpiration": 3
+      }
+    ],
+    "warehouseQuantityList": [
+      115,
+      0,
+      5,
+      10
+    ],
+    "shoppingRoomQuantityList": [
+      1,
+      5,
+      5,
+      4
+    ]
+  },
+  "supermarketState": {
+    "money": 5898,
+    "capacity": 40,
+    "quantityInShoppingRoom": 15
+  },
+  "sells": [
+    4,
+    0,
+    0,
+    1
+  ]
+}

@@ -5,6 +5,7 @@ import edu.csf.oop.java.supermarket.product.ProductType;
 import java.util.Random;
 
 class Demand {
+
     private final ProductType type;
     private final int quantity;
     private final int price;

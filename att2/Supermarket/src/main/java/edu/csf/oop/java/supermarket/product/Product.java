@@ -1,6 +1,7 @@
 package edu.csf.oop.java.supermarket.product;
 
 public class Product {
+
     private final ProductType type;
     private int warehouseQuantity;
     private int shoppingRoomQuantity;
@@ -12,6 +13,14 @@ public class Product {
         this.warehouseQuantity = warehouseQuantity;
         this.price = price;
         daysBeforeExpiration = 3;
+    }
+
+    public Product(ProductType type, int warehouseQuantity, int shoppingRoomQuantity, int price, int daysBeforeExpiration) {
+        this.type = type;
+        this.warehouseQuantity = warehouseQuantity;
+        this.shoppingRoomQuantity = shoppingRoomQuantity;
+        this.price = price;
+        this.daysBeforeExpiration = daysBeforeExpiration;
     }
 
     public ProductType getType() {

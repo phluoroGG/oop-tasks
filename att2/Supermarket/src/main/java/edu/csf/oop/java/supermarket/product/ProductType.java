@@ -1,10 +1,11 @@
 package edu.csf.oop.java.supermarket.product;
 
 public enum ProductType {
-    MILK ("РњРѕР»РѕРєРѕ", 10),
-    MEAT ("РњСЏСЃРѕ", 20),
-    FRUIT ("Р¤СЂСѓРєС‚С‹", 30),
-    ALCOHOL ("РђР»РєРѕРіРѕР»СЊ", 40);
+
+    MILK ("Молоко", 10),
+    MEAT ("Мясо", 20),
+    FRUIT ("Фрукты", 30),
+    ALCOHOL ("Алкоголь", 40);
 
     private final String russianName;
     private final int price;

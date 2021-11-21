@@ -6,6 +6,7 @@ import edu.csf.oop.java.supermarket.services.Utils;
 import java.util.Random;
 
 public class Customer {
+
     private final int length = ProductType.values().length;
     private final Demand[] needs = new Demand[length];
     private int money;

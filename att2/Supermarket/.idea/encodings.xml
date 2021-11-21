@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
-    <file url="file://$PROJECT_DIR$/src/main/java/edu/csf/oop/java/supermarket/Game.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/edu/csf/oop/java/supermarket/Game.java" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/main/java/edu/csf/oop/java/supermarket/customer/Customer.java" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/main/java/edu/csf/oop/java/supermarket/customer/Demand.java" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/main/java/edu/csf/oop/java/supermarket/product/Product.java" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/main/java/edu/csf/oop/java/supermarket/product/ProductType.java" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/main/java/edu/csf/oop/java/supermarket/services/Classes.java" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/main/java/edu/csf/oop/java/supermarket/services/ClassesDeserializer.java" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/main/java/edu/csf/oop/java/supermarket/services/ClassesSerializer.java" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/main/java/edu/csf/oop/java/supermarket/services/GameServices.java" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/main/java/edu/csf/oop/java/supermarket/services/JsonServices.java" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/main/java/edu/csf/oop/java/supermarket/services/Utils.java" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/main/java/edu/csf/oop/java/supermarket/supermarket/ListOfGoods.java" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/main/java/edu/csf/oop/java/supermarket/supermarket/SupermarketState.java" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/main/java/edu/csf/oop/java/supermarket/time/Time.java" charset="windows-1251" />
   </component>
 </project>

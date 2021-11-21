@@ -9,6 +9,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 public class GameServices {
+
     private static final Logger logger = LoggerFactory.getLogger(GameServices.class);
 
     public static void toWarehouse(ListOfGoods list, SupermarketState supermarketState, int position, int quantity) {

@@ -10,11 +10,24 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ListOfGoods {
+
     private static final Logger logger = LoggerFactory.getLogger(ListOfGoods.class);
 
-    private final List<Product> list = new ArrayList<>();
-    private final int[] warehouseQuantityList = new int[ProductType.values().length];
-    private final int[] shoppingRoomQuantityList = new int[ProductType.values().length];
+    private final List<Product> list;
+    private final int[] warehouseQuantityList;
+    private final int[] shoppingRoomQuantityList;
+
+    public ListOfGoods() {
+        list = new ArrayList<>();
+        warehouseQuantityList = new int[ProductType.values().length];
+        shoppingRoomQuantityList = new int[ProductType.values().length];
+    }
+
+    public ListOfGoods(List<Product> list, int[] warehouseQuantityList, int[] shoppingRoomQuantityList) {
+        this.list = list;
+        this.warehouseQuantityList = warehouseQuantityList;
+        this.shoppingRoomQuantityList = shoppingRoomQuantityList;
+    }
 
     public void add(ProductType type, int quantity, int price) {
         Product product = new Product(type, quantity, price);

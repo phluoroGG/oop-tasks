@@ -4,6 +4,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 public class SupermarketState {
+
     private static final Logger logger = LoggerFactory.getLogger(SupermarketState.class);
 
     private int money;
@@ -14,6 +15,12 @@ public class SupermarketState {
         money = 10000;
         capacity = 20;
         quantityInShoppingRoom = 0;
+    }
+
+    public SupermarketState(int money, int capacity, int quantityInShoppingRoom) {
+        this.money = money;
+        this.capacity = capacity;
+        this.quantityInShoppingRoom = quantityInShoppingRoom;
     }
 
     public int getMoney() {

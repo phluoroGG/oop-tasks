@@ -3,6 +3,7 @@ package edu.csf.oop.java.supermarket.services;
 import java.util.Random;
 
 public class Utils {
+
     public static int[] rndIntArr(int length) {
         int[] arr = new int[length];
         Random rnd = new Random();

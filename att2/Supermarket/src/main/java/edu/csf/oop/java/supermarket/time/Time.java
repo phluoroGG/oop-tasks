@@ -4,6 +4,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 public class Time {
+
     private static final Logger logger = LoggerFactory.getLogger(Time.class);
 
     private int days;
@@ -11,9 +12,15 @@ public class Time {
     private int minutes;
 
     public Time() {
-        this.days = 1;
-        this.hours = 8;
-        this.minutes = 0;
+        days = 1;
+        hours = 8;
+        minutes = 0;
+    }
+
+    public Time(int days, int hours, int minutes) {
+        this.days = days;
+        this.hours = hours;
+        this.minutes = minutes;
     }
 
     public int getDays() {
