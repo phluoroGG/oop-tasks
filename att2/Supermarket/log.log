@@ -1,2 +1,427 @@
-2021-11-21 18:53:36,611 [main] INFO  edu.csf.oop.java.supermarket.Game - Application started
-2021-11-21 18:53:38,488 [main] INFO  edu.csf.oop.java.supermarket.Game - Application closed
+2021-11-21 19:43:30,749 [edu.csf.oop.java.supermarket.Game.main()] INFO  edu.csf.oop.java.supermarket.Game - Application started
+2021-11-21 19:43:31,874 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed money from 10000 to 5000
+2021-11-21 19:43:31,874 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Increased capacity by 50
+2021-11-21 19:43:31,890 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed money from 5000 to 4000
+2021-11-21 19:43:31,890 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Increased capacity by 10
+2021-11-21 19:43:31,921 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed money from 4000 to 3600
+2021-11-21 19:43:31,921 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Add product, type - MILK, quantity - 40, price - 12
+2021-11-21 19:43:31,937 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed money from 3600 to 2800
+2021-11-21 19:43:31,937 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Add product, type - MEAT, quantity - 40, price - 25
+2021-11-21 19:43:31,968 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed money from 2800 to 1600
+2021-11-21 19:43:31,968 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Add product, type - FRUIT, quantity - 40, price - 37
+2021-11-21 19:43:31,984 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed money from 1600 to 0
+2021-11-21 19:43:31,984 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Add product, type - ALCOHOL, quantity - 40, price - 50
+2021-11-21 19:43:32,030 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 0 to 20
+2021-11-21 19:43:32,030 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.services.GameServices - Moved to the shopping room 20 units of the product on position 0
+2021-11-21 19:43:32,077 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 20 to 40
+2021-11-21 19:43:32,077 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.services.GameServices - Moved to the shopping room 20 units of the product on position 1
+2021-11-21 19:43:32,124 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 40 to 60
+2021-11-21 19:43:32,124 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.services.GameServices - Moved to the shopping room 20 units of the product on position 2
+2021-11-21 19:43:32,171 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 60 to 80
+2021-11-21 19:43:32,171 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.services.GameServices - Moved to the shopping room 20 units of the product on position 3
+2021-11-21 19:43:32,187 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 173 money
+2021-11-21 19:43:32,187 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - ALCOHOL, quantity - 3, price - 50
+2021-11-21 19:43:32,187 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed money from 0 to 150
+2021-11-21 19:43:32,187 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 80 to 77
+2021-11-21 19:43:32,187 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 149 money
+2021-11-21 19:43:32,187 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - FRUIT, quantity - 1, price - 37
+2021-11-21 19:43:32,187 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MILK, quantity - 0, price - 12
+2021-11-21 19:43:32,187 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed money from 150 to 187
+2021-11-21 19:43:32,187 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 77 to 76
+2021-11-21 19:43:32,187 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 232 money
+2021-11-21 19:43:32,187 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MEAT, quantity - 4, price - 25
+2021-11-21 19:43:32,187 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MILK, quantity - 0, price - 12
+2021-11-21 19:43:32,187 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - FRUIT, quantity - 3, price - 37
+2021-11-21 19:43:32,187 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed money from 187 to 398
+2021-11-21 19:43:32,187 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 76 to 72
+2021-11-21 19:43:32,187 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 72 to 69
+2021-11-21 19:43:32,187 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 105 money
+2021-11-21 19:43:32,187 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - ALCOHOL, quantity - 2, price - 50
+2021-11-21 19:43:32,187 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed money from 398 to 498
+2021-11-21 19:43:32,187 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 69 to 67
+2021-11-21 19:43:32,187 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 223 money
+2021-11-21 19:43:32,187 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - ALCOHOL, quantity - 2, price - 50
+2021-11-21 19:43:32,187 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - FRUIT, quantity - 2, price - 37
+2021-11-21 19:43:32,187 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed money from 498 to 672
+2021-11-21 19:43:32,187 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 67 to 65
+2021-11-21 19:43:32,187 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 65 to 63
+2021-11-21 19:43:32,187 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 71 money
+2021-11-21 19:43:32,187 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MILK, quantity - 3, price - 12
+2021-11-21 19:43:32,187 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MEAT, quantity - 1, price - 25
+2021-11-21 19:43:32,187 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed money from 672 to 733
+2021-11-21 19:43:32,187 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 63 to 60
+2021-11-21 19:43:32,187 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 60 to 59
+2021-11-21 19:43:32,187 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 138 money
+2021-11-21 19:43:32,187 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MILK, quantity - 2, price - 12
+2021-11-21 19:43:32,187 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed money from 733 to 757
+2021-11-21 19:43:32,187 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 59 to 57
+2021-11-21 19:43:32,187 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 25 money
+2021-11-21 19:43:32,187 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MEAT, quantity - 1, price - 25
+2021-11-21 19:43:32,187 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MILK, quantity - 0, price - 12
+2021-11-21 19:43:32,187 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed money from 757 to 782
+2021-11-21 19:43:32,187 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 57 to 56
+2021-11-21 19:43:32,187 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 177 money
+2021-11-21 19:43:32,187 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MEAT, quantity - 2, price - 25
+2021-11-21 19:43:32,187 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MILK, quantity - 2, price - 12
+2021-11-21 19:43:32,187 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed money from 782 to 856
+2021-11-21 19:43:32,187 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 56 to 54
+2021-11-21 19:43:32,187 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 54 to 52
+2021-11-21 19:43:32,187 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 274 money
+2021-11-21 19:43:32,187 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MILK, quantity - 1, price - 12
+2021-11-21 19:43:32,187 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - FRUIT, quantity - 4, price - 37
+2021-11-21 19:43:32,187 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed money from 856 to 1016
+2021-11-21 19:43:32,187 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 52 to 51
+2021-11-21 19:43:32,187 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 51 to 47
+2021-11-21 19:43:32,187 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 188 money
+2021-11-21 19:43:32,187 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MILK, quantity - 0, price - 12
+2021-11-21 19:43:32,187 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - ALCOHOL, quantity - 2, price - 50
+2021-11-21 19:43:32,187 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed money from 1016 to 1116
+2021-11-21 19:43:32,187 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 47 to 45
+2021-11-21 19:43:32,187 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 276 money
+2021-11-21 19:43:32,187 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - ALCOHOL, quantity - 1, price - 50
+2021-11-21 19:43:32,187 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MILK, quantity - 3, price - 12
+2021-11-21 19:43:32,187 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - FRUIT, quantity - 1, price - 37
+2021-11-21 19:43:32,187 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed money from 1116 to 1239
+2021-11-21 19:43:32,187 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 45 to 42
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 42 to 41
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 41 to 40
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 20 money
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - ALCOHOL, quantity - 0, price - 50
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MEAT, quantity - 0, price - 25
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MILK, quantity - 0, price - 12
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 91 money
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MILK, quantity - 3, price - 12
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - ALCOHOL, quantity - 1, price - 50
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - FRUIT, quantity - 0, price - 37
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed money from 1239 to 1325
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 40 to 37
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 37 to 36
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 197 money
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - FRUIT, quantity - 1, price - 37
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MILK, quantity - 2, price - 12
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MEAT, quantity - 2, price - 25
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed money from 1325 to 1436
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 36 to 34
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 34 to 32
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 32 to 31
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 279 money
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MEAT, quantity - 0, price - 25
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MILK, quantity - 1, price - 12
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - FRUIT, quantity - 0, price - 37
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed money from 1436 to 1448
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 31 to 30
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 16 money
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - ALCOHOL, quantity - 0, price - 50
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MEAT, quantity - 0, price - 25
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MILK, quantity - 1, price - 12
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed money from 1448 to 1460
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 30 to 29
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 196 money
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MEAT, quantity - 4, price - 25
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - FRUIT, quantity - 2, price - 37
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed money from 1460 to 1634
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 29 to 25
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 25 to 23
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 176 money
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MEAT, quantity - 1, price - 25
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - ALCOHOL, quantity - 1, price - 50
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - FRUIT, quantity - 2, price - 37
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MILK, quantity - 2, price - 12
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed money from 1634 to 1807
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 23 to 21
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 21 to 20
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 20 to 18
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 18 to 17
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 154 money
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MEAT, quantity - 0, price - 25
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 213 money
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MEAT, quantity - 4, price - 25
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MILK, quantity - 0, price - 12
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed money from 1807 to 1907
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 17 to 13
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 164 money
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MILK, quantity - 0, price - 12
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - FRUIT, quantity - 3, price - 37
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - ALCOHOL, quantity - 1, price - 50
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed money from 1907 to 2068
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 13 to 10
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 10 to 9
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 140 money
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MILK, quantity - 0, price - 12
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - FRUIT, quantity - 0, price - 37
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 21 money
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MILK, quantity - 0, price - 12
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - FRUIT, quantity - 0, price - 37
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 50 money
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MILK, quantity - 0, price - 12
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - ALCOHOL, quantity - 1, price - 50
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - FRUIT, quantity - 0, price - 37
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed money from 2068 to 2118
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 9 to 8
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 187 money
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MILK, quantity - 0, price - 12
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 19 money
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MEAT, quantity - 0, price - 25
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - FRUIT, quantity - 0, price - 37
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MILK, quantity - 0, price - 12
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 291 money
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - ALCOHOL, quantity - 1, price - 50
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MEAT, quantity - 1, price - 25
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - FRUIT, quantity - 1, price - 37
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed money from 2118 to 2230
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 8 to 7
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 7 to 6
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 6 to 5
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 25 money
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - ALCOHOL, quantity - 0, price - 50
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MILK, quantity - 0, price - 12
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 217 money
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - FRUIT, quantity - 0, price - 37
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - ALCOHOL, quantity - 3, price - 50
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed money from 2230 to 2380
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 5 to 2
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 86 money
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - FRUIT, quantity - 0, price - 37
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MILK, quantity - 0, price - 12
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - ALCOHOL, quantity - 1, price - 50
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MEAT, quantity - 0, price - 25
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed money from 2380 to 2430
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 2 to 1
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 22 money
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MILK, quantity - 0, price - 12
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - FRUIT, quantity - 0, price - 37
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 75 money
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MEAT, quantity - 0, price - 25
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MILK, quantity - 0, price - 12
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 171 money
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MILK, quantity - 0, price - 12
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - ALCOHOL, quantity - 1, price - 50
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed money from 2430 to 2480
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 1 to 0
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 39 money
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MILK, quantity - 0, price - 12
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - ALCOHOL, quantity - 0, price - 50
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - FRUIT, quantity - 0, price - 37
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 45 money
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MEAT, quantity - 0, price - 25
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MILK, quantity - 0, price - 12
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 248 money
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MEAT, quantity - 0, price - 25
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - FRUIT, quantity - 0, price - 37
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 86 money
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MILK, quantity - 0, price - 12
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MEAT, quantity - 0, price - 25
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 48 money
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MILK, quantity - 0, price - 12
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MEAT, quantity - 0, price - 25
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 192 money
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - ALCOHOL, quantity - 0, price - 50
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MILK, quantity - 0, price - 12
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MEAT, quantity - 0, price - 25
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 285 money
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MEAT, quantity - 0, price - 25
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MILK, quantity - 0, price - 12
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 74 money
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MEAT, quantity - 0, price - 25
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - FRUIT, quantity - 0, price - 37
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 240 money
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MILK, quantity - 0, price - 12
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - FRUIT, quantity - 0, price - 37
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MEAT, quantity - 0, price - 25
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 142 money
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MILK, quantity - 0, price - 12
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 107 money
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - FRUIT, quantity - 0, price - 37
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MILK, quantity - 0, price - 12
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - ALCOHOL, quantity - 0, price - 50
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MEAT, quantity - 0, price - 25
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 209 money
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MILK, quantity - 0, price - 12
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - ALCOHOL, quantity - 0, price - 50
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 59 money
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - ALCOHOL, quantity - 0, price - 50
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MEAT, quantity - 0, price - 25
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MILK, quantity - 0, price - 12
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 21 money
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MILK, quantity - 0, price - 12
+2021-11-21 19:43:32,202 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.services.GameServices - Waited from 8 hours 0 minutes to 16 hours 0 minutes
+2021-11-21 19:43:32,249 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 0 to 20
+2021-11-21 19:43:32,249 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.services.GameServices - Moved to the shopping room 20 units of the product on position 0
+2021-11-21 19:43:32,296 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 20 to 40
+2021-11-21 19:43:32,296 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.services.GameServices - Moved to the shopping room 20 units of the product on position 1
+2021-11-21 19:43:32,343 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 40 to 60
+2021-11-21 19:43:32,343 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.services.GameServices - Moved to the shopping room 20 units of the product on position 2
+2021-11-21 19:43:32,390 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 60 to 80
+2021-11-21 19:43:32,390 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.services.GameServices - Moved to the shopping room 20 units of the product on position 3
+2021-11-21 19:43:32,390 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 226 money
+2021-11-21 19:43:32,390 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MEAT, quantity - 0, price - 25
+2021-11-21 19:43:32,390 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MILK, quantity - 3, price - 12
+2021-11-21 19:43:32,390 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - FRUIT, quantity - 4, price - 37
+2021-11-21 19:43:32,390 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - ALCOHOL, quantity - 0, price - 50
+2021-11-21 19:43:32,390 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed money from 2480 to 2664
+2021-11-21 19:43:32,390 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 80 to 77
+2021-11-21 19:43:32,390 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 77 to 73
+2021-11-21 19:43:32,390 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 171 money
+2021-11-21 19:43:32,390 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MEAT, quantity - 1, price - 25
+2021-11-21 19:43:32,390 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MILK, quantity - 0, price - 12
+2021-11-21 19:43:32,390 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed money from 2664 to 2689
+2021-11-21 19:43:32,390 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 73 to 72
+2021-11-21 19:43:32,390 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 207 money
+2021-11-21 19:43:32,390 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - FRUIT, quantity - 4, price - 37
+2021-11-21 19:43:32,390 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed money from 2689 to 2837
+2021-11-21 19:43:32,390 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 72 to 68
+2021-11-21 19:43:32,390 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 286 money
+2021-11-21 19:43:32,390 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MEAT, quantity - 0, price - 25
+2021-11-21 19:43:32,390 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 114 money
+2021-11-21 19:43:32,390 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MEAT, quantity - 4, price - 25
+2021-11-21 19:43:32,390 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MILK, quantity - 1, price - 12
+2021-11-21 19:43:32,390 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - FRUIT, quantity - 0, price - 37
+2021-11-21 19:43:32,390 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed money from 2837 to 2949
+2021-11-21 19:43:32,390 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 68 to 67
+2021-11-21 19:43:32,390 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 67 to 63
+2021-11-21 19:43:32,390 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 186 money
+2021-11-21 19:43:32,390 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - ALCOHOL, quantity - 0, price - 50
+2021-11-21 19:43:32,390 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MILK, quantity - 1, price - 12
+2021-11-21 19:43:32,390 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed money from 2949 to 2961
+2021-11-21 19:43:32,390 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 63 to 62
+2021-11-21 19:43:32,390 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 201 money
+2021-11-21 19:43:32,390 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - FRUIT, quantity - 3, price - 37
+2021-11-21 19:43:32,390 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - ALCOHOL, quantity - 0, price - 50
+2021-11-21 19:43:32,405 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MILK, quantity - 3, price - 12
+2021-11-21 19:43:32,405 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed money from 2961 to 3108
+2021-11-21 19:43:32,405 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 62 to 59
+2021-11-21 19:43:32,405 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 59 to 56
+2021-11-21 19:43:32,405 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 120 money
+2021-11-21 19:43:32,405 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - FRUIT, quantity - 2, price - 37
+2021-11-21 19:43:32,405 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MILK, quantity - 3, price - 12
+2021-11-21 19:43:32,405 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - ALCOHOL, quantity - 0, price - 50
+2021-11-21 19:43:32,405 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed money from 3108 to 3218
+2021-11-21 19:43:32,405 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 56 to 53
+2021-11-21 19:43:32,405 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 53 to 51
+2021-11-21 19:43:32,405 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 29 money
+2021-11-21 19:43:32,405 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MILK, quantity - 2, price - 12
+2021-11-21 19:43:32,405 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - FRUIT, quantity - 0, price - 37
+2021-11-21 19:43:32,405 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed money from 3218 to 3242
+2021-11-21 19:43:32,405 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 51 to 49
+2021-11-21 19:43:32,405 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 187 money
+2021-11-21 19:43:32,405 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - ALCOHOL, quantity - 3, price - 50
+2021-11-21 19:43:32,405 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MEAT, quantity - 1, price - 25
+2021-11-21 19:43:32,405 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - FRUIT, quantity - 0, price - 37
+2021-11-21 19:43:32,405 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MILK, quantity - 1, price - 12
+2021-11-21 19:43:32,405 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed money from 3242 to 3429
+2021-11-21 19:43:32,405 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 49 to 48
+2021-11-21 19:43:32,405 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 48 to 47
+2021-11-21 19:43:32,405 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 47 to 44
+2021-11-21 19:43:32,405 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 84 money
+2021-11-21 19:43:32,405 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - FRUIT, quantity - 1, price - 37
+2021-11-21 19:43:32,405 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MILK, quantity - 3, price - 12
+2021-11-21 19:43:32,405 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MEAT, quantity - 0, price - 25
+2021-11-21 19:43:32,405 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - ALCOHOL, quantity - 0, price - 50
+2021-11-21 19:43:32,405 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed money from 3429 to 3502
+2021-11-21 19:43:32,405 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 44 to 41
+2021-11-21 19:43:32,405 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 41 to 40
+2021-11-21 19:43:32,405 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 101 money
+2021-11-21 19:43:32,405 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - FRUIT, quantity - 2, price - 37
+2021-11-21 19:43:32,405 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - ALCOHOL, quantity - 0, price - 50
+2021-11-21 19:43:32,405 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MILK, quantity - 1, price - 12
+2021-11-21 19:43:32,405 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed money from 3502 to 3588
+2021-11-21 19:43:32,405 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 40 to 39
+2021-11-21 19:43:32,405 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 39 to 37
+2021-11-21 19:43:32,405 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 47 money
+2021-11-21 19:43:32,405 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - ALCOHOL, quantity - 0, price - 50
+2021-11-21 19:43:32,405 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 173 money
+2021-11-21 19:43:32,405 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MILK, quantity - 2, price - 12
+2021-11-21 19:43:32,405 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - FRUIT, quantity - 0, price - 37
+2021-11-21 19:43:32,405 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MEAT, quantity - 3, price - 25
+2021-11-21 19:43:32,405 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed money from 3588 to 3687
+2021-11-21 19:43:32,405 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 37 to 35
+2021-11-21 19:43:32,405 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 35 to 32
+2021-11-21 19:43:32,405 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 143 money
+2021-11-21 19:43:32,405 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - ALCOHOL, quantity - 1, price - 50
+2021-11-21 19:43:32,405 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MEAT, quantity - 3, price - 25
+2021-11-21 19:43:32,405 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed money from 3687 to 3812
+2021-11-21 19:43:32,405 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 32 to 29
+2021-11-21 19:43:32,405 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 29 to 28
+2021-11-21 19:43:32,405 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 88 money
+2021-11-21 19:43:32,405 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - FRUIT, quantity - 2, price - 37
+2021-11-21 19:43:32,405 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - ALCOHOL, quantity - 0, price - 50
+2021-11-21 19:43:32,405 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MEAT, quantity - 0, price - 25
+2021-11-21 19:43:32,405 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed money from 3812 to 3886
+2021-11-21 19:43:32,405 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 28 to 26
+2021-11-21 19:43:32,405 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 182 money
+2021-11-21 19:43:32,405 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MEAT, quantity - 4, price - 25
+2021-11-21 19:43:32,405 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - FRUIT, quantity - 1, price - 37
+2021-11-21 19:43:32,405 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed money from 3886 to 4023
+2021-11-21 19:43:32,405 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 26 to 22
+2021-11-21 19:43:32,405 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 22 to 21
+2021-11-21 19:43:32,405 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 29 money
+2021-11-21 19:43:32,405 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MEAT, quantity - 1, price - 25
+2021-11-21 19:43:32,405 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - FRUIT, quantity - 0, price - 37
+2021-11-21 19:43:32,405 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed money from 4023 to 4048
+2021-11-21 19:43:32,405 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 21 to 20
+2021-11-21 19:43:32,405 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 277 money
+2021-11-21 19:43:32,405 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - FRUIT, quantity - 0, price - 37
+2021-11-21 19:43:32,405 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - ALCOHOL, quantity - 2, price - 50
+2021-11-21 19:43:32,405 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MEAT, quantity - 0, price - 25
+2021-11-21 19:43:32,405 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed money from 4048 to 4148
+2021-11-21 19:43:32,405 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 20 to 18
+2021-11-21 19:43:32,405 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 293 money
+2021-11-21 19:43:32,405 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - ALCOHOL, quantity - 1, price - 50
+2021-11-21 19:43:32,405 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - FRUIT, quantity - 0, price - 37
+2021-11-21 19:43:32,405 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed money from 4148 to 4198
+2021-11-21 19:43:32,405 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 18 to 17
+2021-11-21 19:43:32,405 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 247 money
+2021-11-21 19:43:32,405 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MEAT, quantity - 1, price - 25
+2021-11-21 19:43:32,405 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - FRUIT, quantity - 0, price - 37
+2021-11-21 19:43:32,405 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed money from 4198 to 4223
+2021-11-21 19:43:32,405 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 17 to 16
+2021-11-21 19:43:32,405 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 290 money
+2021-11-21 19:43:32,405 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - ALCOHOL, quantity - 4, price - 50
+2021-11-21 19:43:32,405 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - FRUIT, quantity - 1, price - 37
+2021-11-21 19:43:32,405 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed money from 4223 to 4460
+2021-11-21 19:43:32,405 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 16 to 15
+2021-11-21 19:43:32,405 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 15 to 11
+2021-11-21 19:43:32,405 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 137 money
+2021-11-21 19:43:32,405 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MEAT, quantity - 2, price - 25
+2021-11-21 19:43:32,405 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed money from 4460 to 4510
+2021-11-21 19:43:32,405 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 11 to 9
+2021-11-21 19:43:32,405 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 239 money
+2021-11-21 19:43:32,405 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 47 money
+2021-11-21 19:43:32,405 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 5 money
+2021-11-21 19:43:32,405 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - ALCOHOL, quantity - 0, price - 50
+2021-11-21 19:43:32,405 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 66 money
+2021-11-21 19:43:32,405 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 88 money
+2021-11-21 19:43:32,405 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - ALCOHOL, quantity - 1, price - 50
+2021-11-21 19:43:32,405 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed money from 4510 to 4560
+2021-11-21 19:43:32,405 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 9 to 8
+2021-11-21 19:43:32,405 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 29 money
+2021-11-21 19:43:32,405 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - ALCOHOL, quantity - 0, price - 50
+2021-11-21 19:43:32,405 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 27 money
+2021-11-21 19:43:32,405 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 226 money
+2021-11-21 19:43:32,405 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - ALCOHOL, quantity - 4, price - 50
+2021-11-21 19:43:32,405 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed money from 4560 to 4760
+2021-11-21 19:43:32,405 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 8 to 4
+2021-11-21 19:43:32,405 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 241 money
+2021-11-21 19:43:32,405 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 129 money
+2021-11-21 19:43:32,405 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - ALCOHOL, quantity - 1, price - 50
+2021-11-21 19:43:32,405 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed money from 4760 to 4810
+2021-11-21 19:43:32,405 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 4 to 3
+2021-11-21 19:43:32,405 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 159 money
+2021-11-21 19:43:32,405 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 60 money
+2021-11-21 19:43:32,405 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 290 money
+2021-11-21 19:43:32,405 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 131 money
+2021-11-21 19:43:32,405 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 117 money
+2021-11-21 19:43:32,405 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - ALCOHOL, quantity - 2, price - 50
+2021-11-21 19:43:32,405 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed money from 4810 to 4910
+2021-11-21 19:43:32,405 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 3 to 1
+2021-11-21 19:43:32,405 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 176 money
+2021-11-21 19:43:32,405 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - ALCOHOL, quantity - 1, price - 50
+2021-11-21 19:43:32,405 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed money from 4910 to 4960
+2021-11-21 19:43:32,405 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 1 to 0
+2021-11-21 19:43:32,405 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 131 money
+2021-11-21 19:43:32,405 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 112 money
+2021-11-21 19:43:32,405 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 28 money
+2021-11-21 19:43:32,405 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.services.GameServices - Waited from 16 hours 0 minutes to 23 hours 0 minutes
+2021-11-21 19:43:32,405 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.o.j.s.s.SupermarketState - Changed money from 4960 to 4160
+2021-11-21 19:43:32,405 [edu.csf.oop.java.supermarket.Game.main()] INFO  e.c.oop.java.supermarket.time.Time - The next day
+2021-11-21 19:43:33,687 [edu.csf.oop.java.supermarket.Game.main()] INFO  edu.csf.oop.java.supermarket.Game - Application closed

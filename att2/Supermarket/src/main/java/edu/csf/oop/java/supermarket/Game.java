@@ -26,6 +26,8 @@ public class Game {
         logger.info("Application started");
         int i, j;
 
+        boolean isPlayBack = false;
+
         System.out.printf("День %d\n", time.getDays());
 
         while (true) {
@@ -70,9 +72,13 @@ public class Game {
             System.out.println("7. Сделать скидку на почти просрочившийся товар");
             System.out.println("8. Сохранить");
             System.out.println("9. Загрузить");
-            System.out.println("10. Выйти");
+            System.out.println("10. Демонстрационный сценарий");
+            System.out.println("11. Выйти");
             System.out.print(">");
             i = scanner.nextInt();
+            if (isPlayBack) {
+                System.out.println(i);
+            }
 
             switch (i) {
                 case 1:
@@ -85,6 +91,9 @@ public class Game {
                         System.out.println("5. Отмена");
                         System.out.print(">");
                         i = scanner.nextInt();
+                        if (isPlayBack) {
+                            System.out.println(i);
+                        }
 
                         switch (i) {
                             case 1 -> GameServices.waitTime(time, list, supermarketState, 1);
@@ -112,6 +121,9 @@ public class Game {
                         System.out.println("6. Отмена");
                         System.out.print(">");
                         i = scanner.nextInt();
+                        if (isPlayBack) {
+                            System.out.println(i);
+                        }
 
                         if (i != 1 && i != 2 && i != 3 && i != 4 && i != 5 && i != 6) {
                             System.out.println("Повторите ввод");
@@ -130,6 +142,9 @@ public class Game {
                         System.out.println("2. Вернуться");
                         System.out.print(">");
                         i = scanner.nextInt();
+                        if (isPlayBack) {
+                            System.out.println(i);
+                        }
                         switch (i) {
                             case 1:
                                 if (list.isEmpty()) {
@@ -140,6 +155,9 @@ public class Game {
                                     System.out.println("Выберите номер");
                                     System.out.print(">");
                                     i = scanner.nextInt();
+                                    if (isPlayBack) {
+                                        System.out.println(i);
+                                    }
 
                                     if (i > list.size() || i < 1) {
                                         System.out.println("В списке нет товара с таким номером");
@@ -154,6 +172,9 @@ public class Game {
                                 System.out.println("3. Переместить на склад");
                                 System.out.println("4. Отмена");
                                 j = scanner.nextInt();
+                                if (isPlayBack) {
+                                    System.out.println(j);
+                                }
 
                                 while (true) {
                                     switch (j) {
@@ -174,6 +195,9 @@ public class Game {
                                                 System.out.println("Переместить единиц:");
                                                 System.out.print(">");
                                                 j = scanner.nextInt();
+                                                if (isPlayBack) {
+                                                    System.out.println(j);
+                                                }
 
                                                 if (j < -list.getShoppingRoomQuantity(i) ||
                                                         j > list.getWarehouseQuantity(i)) {
@@ -261,6 +285,9 @@ public class Game {
                         System.out.println("5. Отмена");
                         System.out.print(">");
                         i = scanner.nextInt();
+                        if (isPlayBack) {
+                            System.out.println(i);
+                        }
 
                         if (i != 1 && i != 2 && i != 3 && i != 4 && i != 5) {
                             System.out.println("Повторите ввод");
@@ -275,6 +302,9 @@ public class Game {
                     System.out.println("Количество (шт.):");
                     System.out.print(">");
                     j = scanner.nextInt();
+                    if (isPlayBack) {
+                        System.out.println(j);
+                    }
 
                     if (j <= 0) {
                         break;
@@ -289,6 +319,9 @@ public class Game {
                         System.out.println("2. Нет");
                         System.out.print(">");
                         k = scanner.nextInt();
+                        if (isPlayBack) {
+                            System.out.println(k);
+                        }
 
                         if (k != 1 && k != 2) {
                             System.out.println("Повторите ввод");
@@ -304,6 +337,9 @@ public class Game {
                         System.out.println("Цена за единицу товара для продажи:");
                         System.out.print(">");
                         k = scanner.nextInt();
+                        if (isPlayBack) {
+                            System.out.println(k);
+                        }
                         supermarketState.setMoney(supermarketState.getMoney() - price * j);
                         list.add(ProductType.values()[i - 1], j, k);
                     } else {
@@ -321,6 +357,9 @@ public class Game {
                         System.out.println("4. Отмена");
                         System.out.print(">");
                         i = scanner.nextInt();
+                        if (isPlayBack) {
+                            System.out.println(i);
+                        }
 
                         switch (i) {
                             case 1:
@@ -414,6 +453,20 @@ public class Game {
                     break;
 
                 case 10:
+                    if (isPlayBack) {
+                        scanner = new Scanner(System.in);
+                        isPlayBack = false;
+                    } else {
+                        try {
+                            scanner = new Scanner(new File("playback.txt"));
+                            isPlayBack = true;
+                        } catch (Exception e) {
+                            e.printStackTrace();
+                        }
+                    }
+                    break;
+
+                case 11:
                     logger.info("Application closed");
                     return;
 
