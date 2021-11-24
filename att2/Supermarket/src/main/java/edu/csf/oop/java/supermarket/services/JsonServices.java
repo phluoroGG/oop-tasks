@@ -12,6 +12,7 @@ import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.nio.file.Paths;
 
 public class JsonServices {
 
@@ -26,10 +27,12 @@ public class JsonServices {
             sells[i] = ProductType.values()[i].getSells();
         }
         Classes classes = new Classes(time, list, supermarketState, sells);
+        Files.createDirectories(Paths.get("saves"));
         mapper.writeValue(new File("saves/" + fileName + ".json"), classes);
     }
 
     public static Classes deserialize(String fileName) throws IOException {
+        Files.createDirectories(Paths.get("saves"));
         String json = Files.readString(Path.of("saves/" + fileName + ".json"));
         ObjectMapper mapper = new ObjectMapper();
         SimpleModule module =
