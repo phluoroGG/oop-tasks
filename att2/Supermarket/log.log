@@ -1,1 +1,432 @@
-2021-11-24 08:36:31,136 [main] INFO  edu.csf.oop.java.supermarket.Game - Application started
+2021-12-01 10:27:57,725 [main] INFO  edu.csf.oop.java.supermarket.Game - Application started
+2021-12-01 10:28:00,167 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed money from 10000 to 5000
+2021-12-01 10:28:00,169 [main] INFO  e.c.o.j.s.s.SupermarketState - Increased capacity by 50
+2021-12-01 10:28:00,170 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed money from 5000 to 4000
+2021-12-01 10:28:00,171 [main] INFO  e.c.o.j.s.s.SupermarketState - Increased capacity by 10
+2021-12-01 10:28:00,173 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed money from 4000 to 3600
+2021-12-01 10:28:00,174 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Add product, type - MILK, quantity - 40, price - 12
+2021-12-01 10:28:00,176 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed money from 3600 to 2800
+2021-12-01 10:28:00,176 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Add product, type - MEAT, quantity - 40, price - 25
+2021-12-01 10:28:00,178 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed money from 2800 to 1600
+2021-12-01 10:28:00,178 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Add product, type - FRUIT, quantity - 40, price - 37
+2021-12-01 10:28:00,180 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed money from 1600 to 0
+2021-12-01 10:28:00,180 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Add product, type - ALCOHOL, quantity - 40, price - 50
+2021-12-01 10:28:00,186 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 0 to 20
+2021-12-01 10:28:00,186 [main] INFO  e.c.o.j.s.services.GameServices - Moved to the shopping room 20 units of the product on position 0
+2021-12-01 10:28:00,190 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 20 to 40
+2021-12-01 10:28:00,191 [main] INFO  e.c.o.j.s.services.GameServices - Moved to the shopping room 20 units of the product on position 1
+2021-12-01 10:28:00,195 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 40 to 60
+2021-12-01 10:28:00,195 [main] INFO  e.c.o.j.s.services.GameServices - Moved to the shopping room 20 units of the product on position 2
+2021-12-01 10:28:00,200 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 60 to 80
+2021-12-01 10:28:00,200 [main] INFO  e.c.o.j.s.services.GameServices - Moved to the shopping room 20 units of the product on position 3
+2021-12-01 10:28:00,203 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 177 money
+2021-12-01 10:28:00,203 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - FRUIT, quantity - 2, price - 37
+2021-12-01 10:28:00,204 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - ALCOHOL, quantity - 2, price - 50
+2021-12-01 10:28:00,204 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MEAT, quantity - 0, price - 25
+2021-12-01 10:28:00,204 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MILK, quantity - 0, price - 12
+2021-12-01 10:28:00,204 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed money from 0 to 174
+2021-12-01 10:28:00,204 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 80 to 78
+2021-12-01 10:28:00,204 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 78 to 76
+2021-12-01 10:28:00,204 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 181 money
+2021-12-01 10:28:00,204 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MEAT, quantity - 3, price - 25
+2021-12-01 10:28:00,204 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - FRUIT, quantity - 0, price - 37
+2021-12-01 10:28:00,204 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MILK, quantity - 1, price - 12
+2021-12-01 10:28:00,204 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed money from 174 to 261
+2021-12-01 10:28:00,204 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 76 to 75
+2021-12-01 10:28:00,204 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 75 to 72
+2021-12-01 10:28:00,205 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 65 money
+2021-12-01 10:28:00,205 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - ALCOHOL, quantity - 1, price - 50
+2021-12-01 10:28:00,205 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MEAT, quantity - 0, price - 25
+2021-12-01 10:28:00,205 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MILK, quantity - 1, price - 12
+2021-12-01 10:28:00,205 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - FRUIT, quantity - 0, price - 37
+2021-12-01 10:28:00,205 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed money from 261 to 323
+2021-12-01 10:28:00,205 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 72 to 71
+2021-12-01 10:28:00,205 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 71 to 70
+2021-12-01 10:28:00,205 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 145 money
+2021-12-01 10:28:00,205 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - FRUIT, quantity - 1, price - 37
+2021-12-01 10:28:00,205 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MEAT, quantity - 2, price - 25
+2021-12-01 10:28:00,205 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - ALCOHOL, quantity - 1, price - 50
+2021-12-01 10:28:00,205 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MILK, quantity - 0, price - 12
+2021-12-01 10:28:00,206 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed money from 323 to 460
+2021-12-01 10:28:00,206 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 70 to 68
+2021-12-01 10:28:00,206 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 68 to 67
+2021-12-01 10:28:00,206 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 67 to 66
+2021-12-01 10:28:00,206 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 268 money
+2021-12-01 10:28:00,206 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - ALCOHOL, quantity - 0, price - 50
+2021-12-01 10:28:00,206 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MILK, quantity - 2, price - 12
+2021-12-01 10:28:00,206 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MEAT, quantity - 1, price - 25
+2021-12-01 10:28:00,206 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed money from 460 to 509
+2021-12-01 10:28:00,206 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 66 to 64
+2021-12-01 10:28:00,206 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 64 to 63
+2021-12-01 10:28:00,206 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 260 money
+2021-12-01 10:28:00,206 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - FRUIT, quantity - 4, price - 37
+2021-12-01 10:28:00,207 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - ALCOHOL, quantity - 0, price - 50
+2021-12-01 10:28:00,207 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MEAT, quantity - 1, price - 25
+2021-12-01 10:28:00,207 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed money from 509 to 682
+2021-12-01 10:28:00,207 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 63 to 62
+2021-12-01 10:28:00,207 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 62 to 58
+2021-12-01 10:28:00,207 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 1 money
+2021-12-01 10:28:00,207 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - ALCOHOL, quantity - 0, price - 50
+2021-12-01 10:28:00,207 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MILK, quantity - 0, price - 12
+2021-12-01 10:28:00,207 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 239 money
+2021-12-01 10:28:00,207 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MEAT, quantity - 4, price - 25
+2021-12-01 10:28:00,207 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MILK, quantity - 0, price - 12
+2021-12-01 10:28:00,207 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed money from 682 to 782
+2021-12-01 10:28:00,207 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 58 to 54
+2021-12-01 10:28:00,207 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 81 money
+2021-12-01 10:28:00,208 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MILK, quantity - 1, price - 12
+2021-12-01 10:28:00,208 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed money from 782 to 794
+2021-12-01 10:28:00,208 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 54 to 53
+2021-12-01 10:28:00,208 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 229 money
+2021-12-01 10:28:00,208 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - ALCOHOL, quantity - 4, price - 50
+2021-12-01 10:28:00,208 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MEAT, quantity - 1, price - 25
+2021-12-01 10:28:00,208 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MILK, quantity - 0, price - 12
+2021-12-01 10:28:00,208 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed money from 794 to 1019
+2021-12-01 10:28:00,208 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 53 to 52
+2021-12-01 10:28:00,208 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 52 to 48
+2021-12-01 10:28:00,208 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 235 money
+2021-12-01 10:28:00,208 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - ALCOHOL, quantity - 2, price - 50
+2021-12-01 10:28:00,208 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MILK, quantity - 3, price - 12
+2021-12-01 10:28:00,208 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - FRUIT, quantity - 1, price - 37
+2021-12-01 10:28:00,208 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed money from 1019 to 1192
+2021-12-01 10:28:00,208 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 48 to 45
+2021-12-01 10:28:00,209 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 45 to 44
+2021-12-01 10:28:00,209 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 44 to 42
+2021-12-01 10:28:00,209 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 208 money
+2021-12-01 10:28:00,209 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MEAT, quantity - 0, price - 25
+2021-12-01 10:28:00,209 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MILK, quantity - 2, price - 12
+2021-12-01 10:28:00,209 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed money from 1192 to 1216
+2021-12-01 10:28:00,209 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 42 to 40
+2021-12-01 10:28:00,209 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 277 money
+2021-12-01 10:28:00,209 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - ALCOHOL, quantity - 0, price - 50
+2021-12-01 10:28:00,209 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MEAT, quantity - 1, price - 25
+2021-12-01 10:28:00,209 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MILK, quantity - 4, price - 12
+2021-12-01 10:28:00,209 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed money from 1216 to 1289
+2021-12-01 10:28:00,209 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 40 to 36
+2021-12-01 10:28:00,209 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 36 to 35
+2021-12-01 10:28:00,210 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 234 money
+2021-12-01 10:28:00,210 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MILK, quantity - 4, price - 12
+2021-12-01 10:28:00,210 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - FRUIT, quantity - 1, price - 37
+2021-12-01 10:28:00,210 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - ALCOHOL, quantity - 2, price - 50
+2021-12-01 10:28:00,210 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed money from 1289 to 1474
+2021-12-01 10:28:00,210 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 35 to 31
+2021-12-01 10:28:00,210 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 31 to 30
+2021-12-01 10:28:00,210 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 30 to 28
+2021-12-01 10:28:00,210 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 182 money
+2021-12-01 10:28:00,210 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MEAT, quantity - 2, price - 25
+2021-12-01 10:28:00,210 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - FRUIT, quantity - 0, price - 37
+2021-12-01 10:28:00,210 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MILK, quantity - 2, price - 12
+2021-12-01 10:28:00,210 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - ALCOHOL, quantity - 2, price - 50
+2021-12-01 10:28:00,210 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed money from 1474 to 1648
+2021-12-01 10:28:00,210 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 28 to 26
+2021-12-01 10:28:00,210 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 26 to 24
+2021-12-01 10:28:00,210 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 24 to 22
+2021-12-01 10:28:00,211 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 278 money
+2021-12-01 10:28:00,211 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - FRUIT, quantity - 3, price - 37
+2021-12-01 10:28:00,211 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - ALCOHOL, quantity - 0, price - 50
+2021-12-01 10:28:00,211 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MILK, quantity - 0, price - 12
+2021-12-01 10:28:00,211 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed money from 1648 to 1759
+2021-12-01 10:28:00,211 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 22 to 19
+2021-12-01 10:28:00,211 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 223 money
+2021-12-01 10:28:00,211 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MILK, quantity - 0, price - 12
+2021-12-01 10:28:00,211 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - FRUIT, quantity - 1, price - 37
+2021-12-01 10:28:00,211 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed money from 1759 to 1796
+2021-12-01 10:28:00,211 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 19 to 18
+2021-12-01 10:28:00,211 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 237 money
+2021-12-01 10:28:00,211 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MILK, quantity - 0, price - 12
+2021-12-01 10:28:00,211 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 66 money
+2021-12-01 10:28:00,212 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - ALCOHOL, quantity - 1, price - 50
+2021-12-01 10:28:00,212 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MEAT, quantity - 0, price - 25
+2021-12-01 10:28:00,212 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed money from 1796 to 1846
+2021-12-01 10:28:00,212 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 18 to 17
+2021-12-01 10:28:00,212 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 104 money
+2021-12-01 10:28:00,212 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - FRUIT, quantity - 0, price - 37
+2021-12-01 10:28:00,212 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MEAT, quantity - 3, price - 25
+2021-12-01 10:28:00,212 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - ALCOHOL, quantity - 0, price - 50
+2021-12-01 10:28:00,212 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed money from 1846 to 1921
+2021-12-01 10:28:00,212 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 17 to 14
+2021-12-01 10:28:00,212 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 16 money
+2021-12-01 10:28:00,212 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MILK, quantity - 0, price - 12
+2021-12-01 10:28:00,212 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 23 money
+2021-12-01 10:28:00,212 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - ALCOHOL, quantity - 0, price - 50
+2021-12-01 10:28:00,212 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 3 money
+2021-12-01 10:28:00,213 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MILK, quantity - 0, price - 12
+2021-12-01 10:28:00,213 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - ALCOHOL, quantity - 0, price - 50
+2021-12-01 10:28:00,213 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - FRUIT, quantity - 0, price - 37
+2021-12-01 10:28:00,213 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 82 money
+2021-12-01 10:28:00,213 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - FRUIT, quantity - 1, price - 37
+2021-12-01 10:28:00,213 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MILK, quantity - 0, price - 12
+2021-12-01 10:28:00,213 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed money from 1921 to 1958
+2021-12-01 10:28:00,213 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 14 to 13
+2021-12-01 10:28:00,213 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 34 money
+2021-12-01 10:28:00,213 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MILK, quantity - 0, price - 12
+2021-12-01 10:28:00,213 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - ALCOHOL, quantity - 0, price - 50
+2021-12-01 10:28:00,213 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MEAT, quantity - 1, price - 25
+2021-12-01 10:28:00,213 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - FRUIT, quantity - 0, price - 37
+2021-12-01 10:28:00,213 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed money from 1958 to 1983
+2021-12-01 10:28:00,213 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 13 to 12
+2021-12-01 10:28:00,213 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 46 money
+2021-12-01 10:28:00,213 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MILK, quantity - 0, price - 12
+2021-12-01 10:28:00,213 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MEAT, quantity - 1, price - 25
+2021-12-01 10:28:00,214 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - ALCOHOL, quantity - 0, price - 50
+2021-12-01 10:28:00,214 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - FRUIT, quantity - 0, price - 37
+2021-12-01 10:28:00,214 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed money from 1983 to 2008
+2021-12-01 10:28:00,214 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 12 to 11
+2021-12-01 10:28:00,214 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 267 money
+2021-12-01 10:28:00,214 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - ALCOHOL, quantity - 4, price - 50
+2021-12-01 10:28:00,214 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MILK, quantity - 0, price - 12
+2021-12-01 10:28:00,214 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - FRUIT, quantity - 0, price - 37
+2021-12-01 10:28:00,214 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MEAT, quantity - 0, price - 25
+2021-12-01 10:28:00,214 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed money from 2008 to 2208
+2021-12-01 10:28:00,214 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 11 to 7
+2021-12-01 10:28:00,214 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 128 money
+2021-12-01 10:28:00,214 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MILK, quantity - 0, price - 12
+2021-12-01 10:28:00,214 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - FRUIT, quantity - 0, price - 37
+2021-12-01 10:28:00,214 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MEAT, quantity - 0, price - 25
+2021-12-01 10:28:00,214 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 265 money
+2021-12-01 10:28:00,214 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MILK, quantity - 0, price - 12
+2021-12-01 10:28:00,215 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 293 money
+2021-12-01 10:28:00,215 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - ALCOHOL, quantity - 0, price - 50
+2021-12-01 10:28:00,215 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MEAT, quantity - 0, price - 25
+2021-12-01 10:28:00,215 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - FRUIT, quantity - 0, price - 37
+2021-12-01 10:28:00,215 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MILK, quantity - 0, price - 12
+2021-12-01 10:28:00,215 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 85 money
+2021-12-01 10:28:00,215 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MILK, quantity - 0, price - 12
+2021-12-01 10:28:00,215 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - ALCOHOL, quantity - 1, price - 50
+2021-12-01 10:28:00,215 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed money from 2208 to 2258
+2021-12-01 10:28:00,215 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 7 to 6
+2021-12-01 10:28:00,215 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 257 money
+2021-12-01 10:28:00,215 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MEAT, quantity - 0, price - 25
+2021-12-01 10:28:00,215 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - FRUIT, quantity - 2, price - 37
+2021-12-01 10:28:00,216 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - ALCOHOL, quantity - 0, price - 50
+2021-12-01 10:28:00,216 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MILK, quantity - 0, price - 12
+2021-12-01 10:28:00,216 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed money from 2258 to 2332
+2021-12-01 10:28:00,216 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 6 to 4
+2021-12-01 10:28:00,216 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 293 money
+2021-12-01 10:28:00,216 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MILK, quantity - 0, price - 12
+2021-12-01 10:28:00,216 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MEAT, quantity - 0, price - 25
+2021-12-01 10:28:00,216 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - ALCOHOL, quantity - 0, price - 50
+2021-12-01 10:28:00,216 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - FRUIT, quantity - 3, price - 37
+2021-12-01 10:28:00,216 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed money from 2332 to 2443
+2021-12-01 10:28:00,216 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 4 to 1
+2021-12-01 10:28:00,216 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 61 money
+2021-12-01 10:28:00,216 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - ALCOHOL, quantity - 0, price - 50
+2021-12-01 10:28:00,216 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MEAT, quantity - 0, price - 25
+2021-12-01 10:28:00,216 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 62 money
+2021-12-01 10:28:00,216 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MEAT, quantity - 0, price - 25
+2021-12-01 10:28:00,216 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - ALCOHOL, quantity - 0, price - 50
+2021-12-01 10:28:00,217 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MILK, quantity - 0, price - 12
+2021-12-01 10:28:00,217 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 184 money
+2021-12-01 10:28:00,217 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - FRUIT, quantity - 1, price - 37
+2021-12-01 10:28:00,217 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MILK, quantity - 0, price - 12
+2021-12-01 10:28:00,217 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MEAT, quantity - 0, price - 25
+2021-12-01 10:28:00,217 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed money from 2443 to 2480
+2021-12-01 10:28:00,217 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 1 to 0
+2021-12-01 10:28:00,217 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 166 money
+2021-12-01 10:28:00,217 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MEAT, quantity - 0, price - 25
+2021-12-01 10:28:00,217 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - ALCOHOL, quantity - 0, price - 50
+2021-12-01 10:28:00,217 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MILK, quantity - 0, price - 12
+2021-12-01 10:28:00,217 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 42 money
+2021-12-01 10:28:00,217 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MILK, quantity - 0, price - 12
+2021-12-01 10:28:00,217 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - FRUIT, quantity - 0, price - 37
+2021-12-01 10:28:00,217 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 164 money
+2021-12-01 10:28:00,217 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MILK, quantity - 0, price - 12
+2021-12-01 10:28:00,218 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MEAT, quantity - 0, price - 25
+2021-12-01 10:28:00,218 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - FRUIT, quantity - 0, price - 37
+2021-12-01 10:28:00,218 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - ALCOHOL, quantity - 0, price - 50
+2021-12-01 10:28:00,218 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 238 money
+2021-12-01 10:28:00,218 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - FRUIT, quantity - 0, price - 37
+2021-12-01 10:28:00,218 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MILK, quantity - 0, price - 12
+2021-12-01 10:28:00,218 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 246 money
+2021-12-01 10:28:00,218 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - FRUIT, quantity - 0, price - 37
+2021-12-01 10:28:00,218 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MILK, quantity - 0, price - 12
+2021-12-01 10:28:00,218 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 130 money
+2021-12-01 10:28:00,218 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MILK, quantity - 0, price - 12
+2021-12-01 10:28:00,218 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MEAT, quantity - 0, price - 25
+2021-12-01 10:28:00,218 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 28 money
+2021-12-01 10:28:00,218 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MEAT, quantity - 0, price - 25
+2021-12-01 10:28:00,218 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - ALCOHOL, quantity - 0, price - 50
+2021-12-01 10:28:00,219 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MILK, quantity - 0, price - 12
+2021-12-01 10:28:00,219 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - FRUIT, quantity - 0, price - 37
+2021-12-01 10:28:00,219 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 87 money
+2021-12-01 10:28:00,219 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MILK, quantity - 0, price - 12
+2021-12-01 10:28:00,219 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 88 money
+2021-12-01 10:28:00,219 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MILK, quantity - 0, price - 12
+2021-12-01 10:28:00,219 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 89 money
+2021-12-01 10:28:00,219 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MEAT, quantity - 0, price - 25
+2021-12-01 10:28:00,219 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - ALCOHOL, quantity - 0, price - 50
+2021-12-01 10:28:00,219 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - FRUIT, quantity - 0, price - 37
+2021-12-01 10:28:00,219 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MILK, quantity - 0, price - 12
+2021-12-01 10:28:00,219 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 21 money
+2021-12-01 10:28:00,219 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MILK, quantity - 0, price - 12
+2021-12-01 10:28:00,220 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 45 money
+2021-12-01 10:28:00,220 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - ALCOHOL, quantity - 0, price - 50
+2021-12-01 10:28:00,220 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MILK, quantity - 0, price - 12
+2021-12-01 10:28:00,220 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - FRUIT, quantity - 0, price - 37
+2021-12-01 10:28:00,220 [main] INFO  e.c.o.j.s.services.GameServices - Waited from 8 hours 0 minutes to 16 hours 0 minutes
+2021-12-01 10:28:00,224 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 0 to 20
+2021-12-01 10:28:00,224 [main] INFO  e.c.o.j.s.services.GameServices - Moved to the shopping room 20 units of the product on position 0
+2021-12-01 10:28:00,228 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 20 to 40
+2021-12-01 10:28:00,228 [main] INFO  e.c.o.j.s.services.GameServices - Moved to the shopping room 20 units of the product on position 1
+2021-12-01 10:28:00,232 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 40 to 60
+2021-12-01 10:28:00,232 [main] INFO  e.c.o.j.s.services.GameServices - Moved to the shopping room 20 units of the product on position 2
+2021-12-01 10:28:00,236 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 60 to 80
+2021-12-01 10:28:00,236 [main] INFO  e.c.o.j.s.services.GameServices - Moved to the shopping room 20 units of the product on position 3
+2021-12-01 10:28:00,236 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 108 money
+2021-12-01 10:28:00,236 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MILK, quantity - 3, price - 12
+2021-12-01 10:28:00,236 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed money from 2480 to 2516
+2021-12-01 10:28:00,236 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 80 to 77
+2021-12-01 10:28:00,236 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 199 money
+2021-12-01 10:28:00,237 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MILK, quantity - 0, price - 12
+2021-12-01 10:28:00,237 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MEAT, quantity - 0, price - 25
+2021-12-01 10:28:00,237 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - FRUIT, quantity - 3, price - 37
+2021-12-01 10:28:00,237 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - ALCOHOL, quantity - 1, price - 50
+2021-12-01 10:28:00,237 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed money from 2516 to 2677
+2021-12-01 10:28:00,237 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 77 to 74
+2021-12-01 10:28:00,237 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 74 to 73
+2021-12-01 10:28:00,237 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 221 money
+2021-12-01 10:28:00,237 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MEAT, quantity - 2, price - 25
+2021-12-01 10:28:00,237 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MILK, quantity - 0, price - 12
+2021-12-01 10:28:00,237 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - FRUIT, quantity - 4, price - 37
+2021-12-01 10:28:00,237 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed money from 2677 to 2875
+2021-12-01 10:28:00,237 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 73 to 71
+2021-12-01 10:28:00,237 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 71 to 67
+2021-12-01 10:28:00,237 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 210 money
+2021-12-01 10:28:00,237 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - FRUIT, quantity - 4, price - 37
+2021-12-01 10:28:00,237 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MILK, quantity - 4, price - 12
+2021-12-01 10:28:00,237 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - ALCOHOL, quantity - 0, price - 50
+2021-12-01 10:28:00,237 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed money from 2875 to 3071
+2021-12-01 10:28:00,237 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 67 to 63
+2021-12-01 10:28:00,238 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 63 to 59
+2021-12-01 10:28:00,238 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 164 money
+2021-12-01 10:28:00,238 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MEAT, quantity - 0, price - 25
+2021-12-01 10:28:00,238 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MILK, quantity - 1, price - 12
+2021-12-01 10:28:00,238 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - FRUIT, quantity - 1, price - 37
+2021-12-01 10:28:00,238 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed money from 3071 to 3120
+2021-12-01 10:28:00,238 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 59 to 58
+2021-12-01 10:28:00,238 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 58 to 57
+2021-12-01 10:28:00,238 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 285 money
+2021-12-01 10:28:00,238 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MEAT, quantity - 4, price - 25
+2021-12-01 10:28:00,238 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - FRUIT, quantity - 3, price - 37
+2021-12-01 10:28:00,238 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MILK, quantity - 0, price - 12
+2021-12-01 10:28:00,238 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed money from 3120 to 3331
+2021-12-01 10:28:00,238 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 57 to 53
+2021-12-01 10:28:00,238 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 53 to 50
+2021-12-01 10:28:00,238 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 131 money
+2021-12-01 10:28:00,238 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MEAT, quantity - 2, price - 25
+2021-12-01 10:28:00,238 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MILK, quantity - 3, price - 12
+2021-12-01 10:28:00,239 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - FRUIT, quantity - 0, price - 37
+2021-12-01 10:28:00,239 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed money from 3331 to 3417
+2021-12-01 10:28:00,239 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 50 to 47
+2021-12-01 10:28:00,239 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 47 to 45
+2021-12-01 10:28:00,239 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 79 money
+2021-12-01 10:28:00,239 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - FRUIT, quantity - 1, price - 37
+2021-12-01 10:28:00,239 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MEAT, quantity - 1, price - 25
+2021-12-01 10:28:00,239 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MILK, quantity - 1, price - 12
+2021-12-01 10:28:00,239 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed money from 3417 to 3491
+2021-12-01 10:28:00,239 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 45 to 44
+2021-12-01 10:28:00,239 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 44 to 43
+2021-12-01 10:28:00,239 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 43 to 42
+2021-12-01 10:28:00,239 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 216 money
+2021-12-01 10:28:00,239 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MILK, quantity - 3, price - 12
+2021-12-01 10:28:00,239 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - ALCOHOL, quantity - 0, price - 50
+2021-12-01 10:28:00,239 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - FRUIT, quantity - 4, price - 37
+2021-12-01 10:28:00,239 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed money from 3491 to 3675
+2021-12-01 10:28:00,239 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 42 to 39
+2021-12-01 10:28:00,240 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 39 to 35
+2021-12-01 10:28:00,240 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 22 money
+2021-12-01 10:28:00,240 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MEAT, quantity - 0, price - 25
+2021-12-01 10:28:00,240 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - ALCOHOL, quantity - 0, price - 50
+2021-12-01 10:28:00,240 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MILK, quantity - 1, price - 12
+2021-12-01 10:28:00,240 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed money from 3675 to 3687
+2021-12-01 10:28:00,240 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 35 to 34
+2021-12-01 10:28:00,240 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 179 money
+2021-12-01 10:28:00,240 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MILK, quantity - 0, price - 12
+2021-12-01 10:28:00,240 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MEAT, quantity - 1, price - 25
+2021-12-01 10:28:00,240 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed money from 3687 to 3712
+2021-12-01 10:28:00,240 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 34 to 33
+2021-12-01 10:28:00,240 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 207 money
+2021-12-01 10:28:00,240 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - ALCOHOL, quantity - 0, price - 50
+2021-12-01 10:28:00,240 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MILK, quantity - 4, price - 12
+2021-12-01 10:28:00,240 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed money from 3712 to 3760
+2021-12-01 10:28:00,240 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 33 to 29
+2021-12-01 10:28:00,240 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 166 money
+2021-12-01 10:28:00,240 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MEAT, quantity - 3, price - 25
+2021-12-01 10:28:00,240 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - ALCOHOL, quantity - 1, price - 50
+2021-12-01 10:28:00,240 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed money from 3760 to 3885
+2021-12-01 10:28:00,241 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 29 to 26
+2021-12-01 10:28:00,241 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 26 to 25
+2021-12-01 10:28:00,241 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 59 money
+2021-12-01 10:28:00,241 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 141 money
+2021-12-01 10:28:00,241 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MEAT, quantity - 4, price - 25
+2021-12-01 10:28:00,241 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - ALCOHOL, quantity - 0, price - 50
+2021-12-01 10:28:00,241 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed money from 3885 to 3985
+2021-12-01 10:28:00,241 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 25 to 21
+2021-12-01 10:28:00,241 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 95 money
+2021-12-01 10:28:00,241 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - ALCOHOL, quantity - 1, price - 50
+2021-12-01 10:28:00,241 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MEAT, quantity - 1, price - 25
+2021-12-01 10:28:00,241 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed money from 3985 to 4060
+2021-12-01 10:28:00,241 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 21 to 20
+2021-12-01 10:28:00,241 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 20 to 19
+2021-12-01 10:28:00,241 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 75 money
+2021-12-01 10:28:00,241 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 244 money
+2021-12-01 10:28:00,241 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - ALCOHOL, quantity - 3, price - 50
+2021-12-01 10:28:00,242 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed money from 4060 to 4210
+2021-12-01 10:28:00,242 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 19 to 16
+2021-12-01 10:28:00,242 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 16 money
+2021-12-01 10:28:00,242 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 173 money
+2021-12-01 10:28:00,242 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MEAT, quantity - 1, price - 25
+2021-12-01 10:28:00,242 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed money from 4210 to 4235
+2021-12-01 10:28:00,242 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 16 to 15
+2021-12-01 10:28:00,242 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 251 money
+2021-12-01 10:28:00,242 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - ALCOHOL, quantity - 0, price - 50
+2021-12-01 10:28:00,242 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 297 money
+2021-12-01 10:28:00,242 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 212 money
+2021-12-01 10:28:00,242 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MEAT, quantity - 0, price - 25
+2021-12-01 10:28:00,243 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - ALCOHOL, quantity - 3, price - 50
+2021-12-01 10:28:00,243 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed money from 4235 to 4385
+2021-12-01 10:28:00,243 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 15 to 12
+2021-12-01 10:28:00,243 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 273 money
+2021-12-01 10:28:00,243 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - MEAT, quantity - 1, price - 25
+2021-12-01 10:28:00,243 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed money from 4385 to 4410
+2021-12-01 10:28:00,243 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 12 to 11
+2021-12-01 10:28:00,243 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 111 money
+2021-12-01 10:28:00,243 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 183 money
+2021-12-01 10:28:00,243 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - ALCOHOL, quantity - 2, price - 50
+2021-12-01 10:28:00,243 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed money from 4410 to 4510
+2021-12-01 10:28:00,243 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 11 to 9
+2021-12-01 10:28:00,243 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 61 money
+2021-12-01 10:28:00,243 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - ALCOHOL, quantity - 0, price - 50
+2021-12-01 10:28:00,243 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 200 money
+2021-12-01 10:28:00,243 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 99 money
+2021-12-01 10:28:00,243 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - ALCOHOL, quantity - 0, price - 50
+2021-12-01 10:28:00,243 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 224 money
+2021-12-01 10:28:00,243 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 6 money
+2021-12-01 10:28:00,244 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 198 money
+2021-12-01 10:28:00,244 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - ALCOHOL, quantity - 0, price - 50
+2021-12-01 10:28:00,244 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 253 money
+2021-12-01 10:28:00,244 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - ALCOHOL, quantity - 4, price - 50
+2021-12-01 10:28:00,244 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed money from 4510 to 4710
+2021-12-01 10:28:00,244 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 9 to 5
+2021-12-01 10:28:00,244 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 174 money
+2021-12-01 10:28:00,244 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - ALCOHOL, quantity - 1, price - 50
+2021-12-01 10:28:00,244 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed money from 4710 to 4760
+2021-12-01 10:28:00,244 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 5 to 4
+2021-12-01 10:28:00,244 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 197 money
+2021-12-01 10:28:00,244 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - ALCOHOL, quantity - 0, price - 50
+2021-12-01 10:28:00,244 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 36 money
+2021-12-01 10:28:00,244 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 216 money
+2021-12-01 10:28:00,244 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 235 money
+2021-12-01 10:28:00,244 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 212 money
+2021-12-01 10:28:00,244 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 187 money
+2021-12-01 10:28:00,244 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - ALCOHOL, quantity - 3, price - 50
+2021-12-01 10:28:00,244 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed money from 4760 to 4910
+2021-12-01 10:28:00,244 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 4 to 1
+2021-12-01 10:28:00,244 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 103 money
+2021-12-01 10:28:00,245 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Purchased a product, type - ALCOHOL, quantity - 1, price - 50
+2021-12-01 10:28:00,245 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed money from 4910 to 4960
+2021-12-01 10:28:00,245 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed quantity in shopping room from 1 to 0
+2021-12-01 10:28:00,245 [main] INFO  e.c.o.j.s.supermarket.ListOfGoods - Customer came with 65 money
+2021-12-01 10:28:00,245 [main] INFO  e.c.o.j.s.services.GameServices - Waited from 16 hours 0 minutes to 23 hours 0 minutes
+2021-12-01 10:28:00,245 [main] INFO  e.c.o.j.s.s.SupermarketState - Changed money from 4960 to 4160
+2021-12-01 10:28:00,245 [main] INFO  e.c.oop.java.supermarket.time.Time - The next day

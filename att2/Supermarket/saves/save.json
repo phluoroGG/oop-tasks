@@ -1,1 +1,41 @@
-{"time":{"days":2,"hours":8,"minutes":0},"list":{"list":[],"warehouseQuantityList":[0,0,0,0],"shoppingRoomQuantityList":[0,0,0,0]},"supermarketState":{"money":4160,"capacity":80,"quantityInShoppingRoom":0},"sells":[40,40,40,40]}
+{
+  "time": {
+    "days": 1,
+    "hours": 9,
+    "minutes": 0
+  },
+  "list": {
+    "list": [
+      {
+        "type": "MILK",
+        "warehouseQuantity": 10,
+        "shoppingRoomQuantity": 0,
+        "price": 12,
+        "daysBeforeExpiration": 3
+      }
+    ],
+    "warehouseQuantityList": [
+      10,
+      0,
+      0,
+      0
+    ],
+    "shoppingRoomQuantityList": [
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "supermarketState": {
+    "money": 8900,
+    "capacity": 30,
+    "quantityInShoppingRoom": 0
+  },
+  "sells": [
+    0,
+    0,
+    0,
+    0
+  ]
+}
