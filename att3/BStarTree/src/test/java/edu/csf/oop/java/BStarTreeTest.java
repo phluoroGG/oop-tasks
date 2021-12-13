@@ -7,15 +7,16 @@ class BStarTreeTest {
 
     @Test
     void testAdd() throws Exception {
-        BStarTree<Integer> tree = new BStarTree<>(3);
-        tree.add(1);
-        tree.add(2);
-        tree.add(3);
-        tree.add(4);
-        tree.add(5);
-        tree.add(6);
-        tree.add(7);
-        tree.add(8);
+        BStarTree<Integer> tree = new BStarTree<>(4);
+        for (int i = 1; i < 16; i++) {
+            tree.add(i);
+        }
+        for (int i = 1; i < 16; i++) {
+            boolean search = tree.search(i);
+            int q = 0;
+        }
+        boolean search = tree.search(0);
+        search = tree.search(17);
         Integer[] array = tree.toList().toArray(new Integer[0]);
         Assertions.assertTrue(true);
     }
