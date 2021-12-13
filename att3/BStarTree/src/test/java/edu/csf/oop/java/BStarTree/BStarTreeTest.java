@@ -1,4 +1,4 @@
-package edu.csf.oop.java;
+package edu.csf.oop.java.BStarTree;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;

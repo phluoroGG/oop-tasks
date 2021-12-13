@@ -1,4 +1,4 @@
-package edu.csf.oop.java;
+package edu.csf.oop.java.BStarTree;
 
 import java.util.ArrayList;
 import java.util.List;
