@@ -3,54 +3,50 @@ package edu.csf.oop.java.BStarTree;
 import java.util.ArrayList;
 import java.util.List;
 
-class BStarTreeNode<T extends Comparable<T>> {
-    private List<T> keys;
-    private final int degree;
-    private List<BStarTreeNode<T>> children;
+public class BStarTreeNode<T extends Comparable<T>> {
+    private final List<T> keys;
+    private final List<BStarTreeNode<T>> children;
     private BStarTreeNode<T> parent;
-    private boolean isLeaf;
 
-    public BStarTreeNode(int degree, BStarTreeNode<T> parent) {
-        this.degree = degree;
+    public BStarTreeNode(BStarTreeNode<T> parent) {
+        this.parent = parent;
         keys = new ArrayList<>();
         children = new ArrayList<>();
-        this.parent = parent;
-        isLeaf = true;
     }
 
-    public List<T> getKeys() {
+    List<T> getKeys() {
         return keys;
     }
 
-    public int getDegree() {
-        return degree;
+    public List<T> getKeysReadOnly() {
+        return new ArrayList<>(keys);
     }
 
-    public List<BStarTreeNode<T>> getChildren() {
+    List<BStarTreeNode<T>> getChildren() {
         return children;
+    }
+
+    public List<BStarTreeNode<T>> getChildrenReadOnly() {
+        return new ArrayList<>(children);
     }
 
     public BStarTreeNode<T> getParent() {
         return parent;
     }
 
-    public boolean isLeaf() {
-        return isLeaf;
-    }
-
-    public void setKeys(List<T> keys) {
-        this.keys = keys;
-    }
-
-    public void setChildren(List<BStarTreeNode<T>> children) {
-        this.children = children;
-    }
-
-    public void setParent(BStarTreeNode<T> parent) {
+    void setParent(BStarTreeNode<T> parent) {
         this.parent = parent;
     }
 
-    public void setLeaf(boolean leaf) {
-        isLeaf = leaf;
+    public boolean isLeaf() {
+        return children.isEmpty();
+    }
+
+    int countOfKeys() {
+        int count = keys.size();
+        for (BStarTreeNode<T> node : children) {
+            count += node.keys.size();
+        }
+        return count;
     }
 }
