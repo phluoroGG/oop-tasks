@@ -143,10 +143,11 @@ class BStarTreeTest {
         }
         tree.remove(1);
         Assertions.assertEquals(3, tree.getRoot().getKeys().get(0));
-        Assertions.assertEquals(1, tree.getRoot().getChildren().get(0).getKeys().get(0));
-        Assertions.assertEquals(2, tree.getRoot().getChildren().get(0).getKeys().get(1));
+        Assertions.assertEquals(5, tree.getRoot().getKeys().get(1));
+        Assertions.assertEquals(2, tree.getRoot().getChildren().get(0).getKeys().get(0));
         Assertions.assertEquals(4, tree.getRoot().getChildren().get(1).getKeys().get(0));
-        Assertions.assertEquals(5, tree.getRoot().getChildren().get(1).getKeys().get(1));
+        Assertions.assertEquals(6, tree.getRoot().getChildren().get(2).getKeys().get(0));
+        Assertions.assertEquals(7, tree.getRoot().getChildren().get(2).getKeys().get(1));
     }
 
     @Test
